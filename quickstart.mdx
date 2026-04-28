@@ -1,0 +1,133 @@
+---
+title: Getting Started with Laminar Copilot
+description: Set up your account and make your first route in minutes. This guide walks you through account creation, initial configuration, and basic navigation.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following:
+
+<Callout kind="info">
+
+- A modern web browser such as Chrome, Firefox, or Safari
+- A valid email address for account verification
+- Access to your email inbox for confirmation links
+
+</Callout>
+
+Laminar Copilot runs entirely in the browser at `https://app.laminarcopilot.com`, so no downloads or installations are required.
+
+## Create and Verify Your Account
+
+Sign up for Laminar Copilot in under a minute.
+
+<Steps>
+  <Step title="Visit the App" icon="globe">
+    Open your browser and navigate to [`https://app.laminarcopilot.com`](https://app.laminarcopilot.com).
+  </Step>
+  <Step title="Enter Your Details" icon="user-plus">
+    Click **Sign Up** and provide your email address and a secure password. You can also sign up using Google or GitHub for faster access.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification email from Laminar Copilot. Click the link to confirm your account.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  If you do not receive the verification email, check your spam folder or request a new one from the sign-up page.
+</Callout>
+
+## Log In to the Web App
+
+Once verified, log in to access your dashboard.
+
+<Tabs>
+  <Tab title="Email & Password" icon="mail">
+    Enter your email and password on the login page. Use the **Forgot Password** link if needed.
+  </Tab>
+  <Tab title="Social Login" icon="share-2">
+    Click **Continue with Google** or **Continue with GitHub** for seamless authentication.
+  </Tab>
+</Tabs>
+
+After login, you land on the main dashboard.
+
+## Set Up Your First Workspace
+
+Workspaces organize your routes and audits. Create one to get started.
+
+<Steps>
+  <Step title="Create Workspace" icon="plus">
+    From the dashboard, click **New Workspace**. Name it something like `My First Project`.
+  </Step>
+  <Step title="Configure Basics" icon="settings">
+    Add a description and select your default region (e.g., US East). Save the workspace.
+  </Step>
+  <Step title="Schedule First Route" icon="calendar">
+    Inside the workspace, click **New Route**. Set a simple audit path and schedule it to run immediately.
+  </Step>
+</Steps>
+
+Here is an example route configuration:
+
+<CodeGroup tabs="JSON,CLI">
+```json
+{
+  "name": "Basic Audit Route",
+  "path": "/api/health",
+  "frequency": "daily",
+  "regions": ["us-east-1"]
+}
+```
+```bash
+laminar route create --name "Basic Audit" --path "/api/health" --freq daily
+```
+</CodeGroup>
+
+## Navigate the Dashboard Interface
+
+The dashboard provides quick access to your tools.
+
+<Columns cols={3}>
+  <Card title="Audit Panel" icon="search" href="/audit-panel">
+    View real-time audit results and logs.
+  </Card>
+  <Card title="Routes" icon="map" href="/routes">
+    Manage scheduled routes and workflows.
+  </Card>
+  <Card title="Workspaces" icon="layers" href="/workspaces">
+    Switch between projects easily.
+  </Card>
+</Columns>
+
+Key sections include:
+- **Sidebar**: Workspaces, routes, and settings
+- **Main Panel**: Audit results and visualizations
+- **Top Bar**: Search, notifications, and user profile
+
+## Next Steps
+
+<Expandable title="Troubleshooting Common Issues" default-open="false">
+
+If you encounter login problems:
+
+| Issue | Solution |
+|-------|----------|
+| Email not verified | Resend verification from login page |
+| Password reset | Use **Forgot Password** link |
+| Slow loading | Clear browser cache and try incognito mode |
+
+</Expandable>
+
+Explore more with these resources:
+
+<Columns cols={2}>
+  <Card title="Solutions" icon="lightbulb" href="/solutions">
+    Dive into advanced features.
+  </Card>
+  <Card title="FAQs" icon="help-circle" href="/faqs" horizontal>
+    Find answers to common questions.
+  </Card>
+</Columns>
+
+You are now ready to build routes and audits in Laminar Copilot!
