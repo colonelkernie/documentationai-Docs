@@ -22,11 +22,6 @@
                 "title": "Introduction",
                 "path": "introduction",
                 "icon": "home"
-              },
-              {
-                "title": "Quickstart",
-                "path": "quickstart",
-                "icon": "zap"
               }
             ]
           },
