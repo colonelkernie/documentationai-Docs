@@ -1,0 +1,40 @@
+---
+title: Configure Your Workspace Settings
+description: How to configure your Laminar Copilot workspace for your AFP's operations.
+---
+
+## Accessing Workspace Settings
+
+1. In the Copilot app, click the **gear icon** at the bottom of the side navigation.
+2. Select **Settings**.
+3. From here, you can adjust key workspace configurations.
+
+---
+
+## AFP Management Contacts
+
+Make sure your AFP management team's contact details are up to date:
+
+- Add the **phone numbers** of AFP managers who should be notified if there's a risk of routes being rejected or left unfilled by drivers.
+- You can also view all text notifications sent to your AFP management team in the [Text Message Notifications](https://help.laminarcopilot.com/en/articles/12120351-text-message-notifications) article.
+
+> **Pro Tip:** Keep this list updated whenever your management team changes to avoid missed alerts.
+
+---
+
+## Scheduling Features
+
+Review the scheduling feature toggles and make sure the correct ones are enabled for your operation:
+
+- **Slip Seating**
+- **4 on 4 off**
+
+> **Note:** Enabling these ensures that Copilot's scheduling logic matches the way you like to assign routes to your drivers and assets.
+
+---
+
+## Workspace Features
+
+You can also control additional features that impact your workspace experience:
+
+- **AI Assistant** – Toggle this on or off depending on whether you want Copilot's AI assistant available in your app.
