@@ -11,55 +11,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
-        "icon": "book",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "icon": "rocket",
-            "pages": [
-              {
-                "title": "Introduction",
-                "path": "introduction",
-                "icon": "home"
-              }
-            ]
-          },
-          {
-            "group": "Core Concepts",
-            "icon": "layers",
-            "pages": [
-              {
-                "title": "Features",
-                "path": "features",
-                "icon": "star"
-              }
-            ]
-          },
-          {
-            "group": "Advanced",
-            "icon": "folder",
-            "pages": [
-              {
-                "title": "Integrations",
-                "path": "integrations",
-                "icon": "link"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "icon": "code",
-        "groups": [
-          {
-            "group": "Endpoints",
-            "openapi": "api-reference/openapi.yaml"
-          }
-        ]
-      },
-      {
         "tab": "Help Center",
         "icon": "help-circle",
         "pages": [
@@ -83,12 +34,7 @@
             "group": "Troubleshooting",
             "icon": "alert-triangle",
             "expandable": false,
-            "pages": [
-              {
-                "title": "Cannot Invite User",
-                "path": "help-center/troubleshooting/cannot-invite-user"
-              }
-            ]
+            "pages": []
           },
           {
             "group": "Guides",

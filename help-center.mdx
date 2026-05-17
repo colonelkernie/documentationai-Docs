@@ -1,29 +1,37 @@
 ---
 title: Laminar Copilot Help Center
 ---
-
-<Columns cols={2}>
-  <Card title="FAQs" icon="help-circle" href="/help-center/faq/getting-started" horizontal>
-    Answers to common Laminar Copilot questions.
-  </Card>
-  <Card title="Troubleshooting" icon="alert-triangle" href="/help-center/troubleshooting/cannot-invite-user" horizontal>
-    Quick solutions for typical issues.
-  </Card>
-  <Card title="Guides" icon="book-open" href="/help-center/guides/create-new-doc" horizontal>
+<Columns cols="2">
+  <Card title="Guides" href="/help-center/guides" icon="book-open" horizontal="false" target="_self">
     Basic how-tos for Laminar Copilot.
   </Card>
-  <Card title="Changelog" icon="clock" href="/changelog" horizontal>
+
+  <Card title="FAQs" href="/help-center/faq/getting-started" icon="help-circle" horizontal="false">
+    Answers to common Laminar Copilot questions.
+  </Card>
+
+  <Card title="Troubleshooting" href="/help-center/troubleshooting/cannot-invite-user" icon="alert-triangle" horizontal="false">
+    Quick solutions for typical issues.
+  </Card>
+
+  <Card title="Changelog" href="/changelog" icon="clock" horizontal="false">
     Latest improvements and updates.
+  </Card>
+
+  <Card title="New Card" horizontal="false">
+    Card description...
   </Card>
 </Columns>
 
 ## Contact Support
 
-<Columns cols={2}>
-  <Card title="Email Support" icon="mail" href="mailto:support@laminarcopilot.com">
+<Columns cols="2">
+  <Card title="Email Support" href="mailto:support@laminarcopilot.com" icon="mail" horizontal="false">
     24-hour response from our team.
   </Card>
-  <Card title="Community" icon="users" href="https://community.laminarcopilot.com" target="_blank">
+
+  <Card title="Community" href="https://community.laminarcopilot.com" icon="users" horizontal="false" target="_blank">
     Get help from other users.
   </Card>
 </Columns>
+
