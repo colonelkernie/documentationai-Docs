@@ -2,7 +2,7 @@
   "name": "Laminar Copilot",
   "colors": {
     "light": {
-      "brand": "#2c5d6d",
+      "brand": "#256c83",
       "heading": "#1a1a1a",
       "text": "#374151"
     },
@@ -69,5 +69,5 @@
       }
     ]
   },
-  "template": "atlas"
+  "template": "classic"
 }
