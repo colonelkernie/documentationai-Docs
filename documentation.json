@@ -20,32 +20,10 @@
             "icon": "home"
           },
           {
-            "group": "FAQs",
-            "icon": "help-circle",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Getting Started FAQ",
-                "path": "help-center/faq/getting-started"
-              }
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "icon": "alert-triangle",
-            "expandable": false,
-            "pages": []
-          },
-          {
-            "group": "Guides",
+            "group": "Getting Started",
+            "pages": [],
             "icon": "book-open",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Create New Doc",
-                "path": "help-center/guides/create-new-doc"
-              }
-            ]
+            "path": "help-center/getting-started"
           }
         ]
       },
