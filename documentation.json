@@ -78,8 +78,12 @@
       },
       "links": [
         {
-          "title": "App",
+          "title": "Go to App",
           "link": "https://app.laminarcopilot.com"
+        },
+        {
+          "title": "Join Waitlist",
+          "link": "https://laminarcopilot.com/#form"
         }
       ]
     }
