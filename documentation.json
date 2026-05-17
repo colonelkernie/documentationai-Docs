@@ -21,7 +21,12 @@
           },
           {
             "group": "Getting Started",
-            "pages": [],
+            "pages": [
+              {
+                "title": "test",
+                "path": "test"
+              }
+            ],
             "icon": "book-open",
             "path": "help-center/getting-started"
           }
