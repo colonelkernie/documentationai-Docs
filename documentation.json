@@ -2,14 +2,10 @@
   "name": "Laminar Copilot",
   "colors": {
     "light": {
-      "brand": "#256c83",
-      "heading": "#1a1a1a",
-      "text": "#374151"
+      "brand": "#243338"
     },
     "dark": {
-      "brand": "#82B8C9",
-      "heading": "#f2f2f2",
-      "text": "#c1c1c1"
+      "brand": "#82B8C9"
     }
   },
   "navigation": {
@@ -24,35 +20,37 @@
             "icon": "home"
           },
           {
-            "group": "Getting Started",
+            "group": "FAQs",
+            "icon": "help-circle",
+            "expandable": false,
             "pages": [
               {
-                "title": "Introduction and Login",
-                "path": "help-center/guides/introduction-and-login"
-              },
-              {
-                "title": "Configure Your Workspace Settings",
-                "path": "help-center/guides/02-configure-workspace-settings"
-              },
-              {
-                "title": "Adding Contracts",
-                "path": "help-center/guides/04-adding-contracts"
-              },
-              {
-                "title": "Add Assets",
-                "path": "help-center/guides/05-add-assets"
-              },
-              {
-                "title": "Add Drivers",
-                "path": "help-center/guides/06-add-drivers"
-              },
-              {
-                "title": "Schedule Routes",
-                "path": "help-center/guides/03-schedule-routes"
+                "title": "Getting Started FAQ",
+                "path": "help-center/faq/getting-started"
               }
-            ],
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "icon": "alert-triangle",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Cannot Invite User",
+                "path": "help-center/troubleshooting/cannot-invite-user"
+              }
+            ]
+          },
+          {
+            "group": "Guides",
             "icon": "book-open",
-            "path": "help-center/getting-started"
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Create New Doc",
+                "path": "help-center/guides/create-new-doc"
+              }
+            ]
           }
         ]
       },
@@ -68,24 +66,5 @@
         ]
       }
     ]
-  },
-  "template": "classic",
-  "navbar": {
-    "actions": {
-      "primary": {
-        "title": "Contact Support",
-        "link": "https://www.google.com"
-      },
-      "links": [
-        {
-          "title": "Go to App",
-          "link": "https://app.laminarcopilot.com"
-        },
-        {
-          "title": "Join Waitlist",
-          "link": "https://laminarcopilot.com/#form"
-        }
-      ]
-    }
   }
 }
