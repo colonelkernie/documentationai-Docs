@@ -1,13 +1,10 @@
-# How to Edit Actual Route Start and End Times Using Advanced Settings
-
-> This guide explains how to adjust the actual start and end times of an existing route using Advanced Route Time Editing, and how those changes affect scheduling, validations, and downstream calculations.
-
-**Source:** https://help.laminarcopilot.com/en/articles/13395595-how-to-edit-actual-route-start-and-end-times-using-advanced-settings  
-**Collection:** Solutions > Managing Routes  
-**Last Updated:** January 15, 2026
-
 ---
-
+title: How to Edit Actual Route Start and End Times Using Advanced Settings
+description: >-
+  This guide explains how to adjust the actual start and end times of an
+  existing route using Advanced Route Time Editing, and how those changes affect
+  scheduling, validations, and downstream calculations.
+---
 ## Overview
 
 Advanced Route Time Editing allows you to manually correct a route's actual start and end date/time when it differs from the originally scheduled plan. These actual times are then used across Laminar Copilot for scheduling logic, driver hours, and asset availability.
@@ -17,7 +14,9 @@ Advanced Route Time Editing allows you to manually correct a route's actual star
 ## Where to Find Advanced Route Time Editing
 
 - Open an **existing route** to launch the route edit drawer.
+
 - In the drawer, expand the **Advanced Settings** toggle.
+
 - If a route already has actual times set, this section will be **automatically expanded**.
 
 ---
@@ -27,8 +26,11 @@ Advanced Route Time Editing allows you to manually correct a route's actual star
 Within **Advanced Settings**, you can set the following four fields:
 
 - Actual Start Date
+
 - Actual Start Time
+
 - Actual End Date
+
 - Actual End Time
 
 All route types support actual time editing, including SO1, SO2, RLB, and INC.
@@ -40,6 +42,7 @@ All route types support actual time editing, including SO1, SO2, RLB, and INC.
 When setting actual route times:
 
 - If **any one** of the four fields is filled out, **all four must be completed**.
+
 - Partial entries are not allowed.
 
 ---
@@ -51,6 +54,7 @@ When setting actual route times:
 When setting the **actual start date/time**:
 
 - It **cannot be earlier** than the originally scheduled start time.
+
 - It **cannot be more than 4 hours later** than the originally scheduled start time.
 
 If violated, the user will see an inline UI message and an error upon saving.
@@ -60,6 +64,7 @@ If violated, the user will see an inline UI message and an error upon saving.
 When setting the **actual end date/time**:
 
 - It **cannot be earlier** than the actual start date/time.
+
 - It **can be any amount of time after** the actual start (no upper bound, except for route-type limits below).
 
 ---
@@ -69,6 +74,7 @@ When setting the **actual end date/time**:
 For certain route types, total route length is capped:
 
 - **SO1:** Maximum 14 hours
+
 - **SO2:** Maximum 38 hours
 
 ---
@@ -76,6 +82,7 @@ For certain route types, total route length is capped:
 ## Updating Routes With Existing Actual Times
 
 - Routes with actual times already set can be edited again at any time.
+
 - Changes overwrite the previous actual times.
 
 ---
@@ -85,8 +92,11 @@ For certain route types, total route length is capped:
 Once actual times are saved:
 
 - The route block updates visually in the **Dynamic Breakdown tables**.
+
 - The displayed start and end times reflect the updated actual times.
+
 - Driver hour calculations update automatically.
+
 - Scheduled hours in breakdown tables are recalculated using actual times.
 
 These changes also appear consistently across all views in the Command Center.
@@ -100,8 +110,11 @@ Once a route's actual times are modified, **all scheduling logic uses those time
 ### Driver Validations
 
 - Overlapping route conflicts
+
 - 60/70-hour limits
+
 - 10-hour reset requirements
+
 - Impact on future assigned routes
 
 ### Asset Validations
