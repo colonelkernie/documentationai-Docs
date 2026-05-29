@@ -47,55 +47,6 @@
               }
             ],
             "path": "help-center/getting-started"
-          },
-          {
-            "group": "Solutions",
-            "pages": [
-              {
-                "title": "Dynamic Scheduler",
-                "path": "help-center/solutions/dynamic-scheduler"
-              },
-              {
-                "title": "Adjust Overtime (Dynamic Scheduler)",
-                "path": "help-center/solutions/how-to-adjust-overtime-dynamic-scheduler"
-              },
-              {
-                "title": "Edit Actual Route Start and End Times",
-                "path": "help-center/solutions/how-to-edit-actual-route-start-and-end-times"
-              },
-              {
-                "title": "Import Routes into Copilot",
-                "path": "help-center/solutions/import-routes-into-copilot"
-              },
-              {
-                "title": "Manage Billing and Invoices",
-                "path": "help-center/solutions/manage-billing-and-invoices"
-              },
-              {
-                "title": "Scheduling a Route",
-                "path": "help-center/solutions/scheduling-a-route"
-              },
-              {
-                "title": "SCV Chrome Extension",
-                "path": "help-center/solutions/scv-chrome-extension"
-              },
-              {
-                "title": "Text Message Notifications",
-                "path": "help-center/solutions/text-message-notifications"
-              },
-              {
-                "title": "The Audit Panel",
-                "path": "help-center/solutions/the-audit-panel"
-              },
-              {
-                "title": "Time Off Tracker",
-                "path": "help-center/solutions/time-off-tracker"
-              },
-              {
-                "title": "Understanding Ride Along Routes",
-                "path": "help-center/solutions/understanding-ride-along-routes"
-              }
-            ]
           }
         ],
         "icon": "circle-question-mark"
