@@ -9,9 +9,9 @@
     }
   },
   "navigation": {
-    "dropdowns": [
+    "tabs": [
       {
-        "dropdown": "Help Center",
+        "tab": "Help Center",
         "pages": [
           {
             "title": "Help Center",
@@ -113,7 +113,7 @@
             "icon": "history"
           }
         ],
-        "dropdown": "Changelog"
+        "tab": "Changelog"
       }
     ]
   }
