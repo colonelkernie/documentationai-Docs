@@ -20,12 +20,8 @@
           },
           {
             "group": "Getting Started",
-            "pages": [
-              {
-                "title": "Getting Started",
-                "path": "help-center/getting-started"
-              }
-            ]
+            "pages": [],
+            "path": "help-center/getting-started"
           },
           {
             "group": "Guides",
