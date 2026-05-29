@@ -13,7 +13,9 @@
       {
         "title": "Home",
         "path": "help-center",
-        "icon": "home"
+        "icon": "home",
+        "show-toc": false,
+        "ask-feedback": false
       },
       {
         "group": "Getting Started",
