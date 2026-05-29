@@ -46,7 +46,7 @@
           }
         ],
         "path": "help-center/getting-started",
-        "icon": "circle-play"
+        "icon": "book-open"
       },
       {
         "group": "Solutions",
@@ -144,7 +144,8 @@
       },
       {
         "title": "Changelog",
-        "path": "changelog"
+        "path": "changelog",
+        "icon": "clock"
       }
     ]
   }
