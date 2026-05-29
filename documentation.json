@@ -50,13 +50,81 @@
       },
       {
         "group": "Solutions",
-        "pages": [],
+        "pages": [
+          {
+            "group": "Managing Routes",
+            "pages": [
+              {
+                "title": "Dynamic Scheduler",
+                "path": "help-center/solutions/dynamic-scheduler"
+              },
+              {
+                "title": "Scheduling A Route",
+                "path": "help-center/solutions/scheduling-a-route"
+              },
+              {
+                "title": "Edit Actual Route Start And End Times",
+                "path": "help-center/solutions/how-to-edit-actual-route-start-and-end-times"
+              },
+              {
+                "title": "Understanding Ride Along Routes",
+                "path": "help-center/solutions/understanding-ride-along-routes"
+              },
+              {
+                "title": "The Audit Panel",
+                "path": "help-center/solutions/the-audit-panel"
+              }
+            ],
+            "icon": "layout-list"
+          },
+          {
+            "group": "Managing Drivers",
+            "pages": [
+              {
+                "title": "Time Off Tracker",
+                "path": "help-center/solutions/time-off-tracker"
+              },
+              {
+                "title": "Text Message Notifications",
+                "path": "help-center/solutions/text-message-notifications"
+              },
+              {
+                "title": "How To Adjust Overtime Dynamic Scheduler",
+                "path": "help-center/solutions/how-to-adjust-overtime-dynamic-scheduler"
+              }
+            ],
+            "icon": "id-card-lanyard"
+          },
+          {
+            "group": "Managing Assets",
+            "pages": [
+              {
+                "title": "SCV Chrome Extension",
+                "path": "help-center/solutions/scv-chrome-extension"
+              }
+            ],
+            "icon": "lucide-truck"
+          }
+        ],
         "icon": "hammer",
         "path": "solutions"
       },
       {
         "group": "FAQs",
-        "pages": [],
+        "pages": [
+          {
+            "title": "Dynamic Scheduler Faqs",
+            "path": "help-center/faq/dynamic-scheduler-faqs"
+          },
+          {
+            "title": "What Is A Standby Driver?",
+            "path": "help-center/faq/what-is-a-standby-driver"
+          },
+          {
+            "title": "Why Cant I Assign A Driver To A Route Block?",
+            "path": "help-center/faq/why-cant-i-assign-a-driver-to-a-route-block"
+          }
+        ],
         "icon": "circle-question-mark",
         "path": "faqs"
       },
@@ -66,6 +134,10 @@
           {
             "title": "Submit a Support Ticket",
             "path": "submit-a-support-ticket"
+          },
+          {
+            "title": "Manage Billing",
+            "path": "manage-billing-and-invoices"
           }
         ],
         "icon": "hand"
