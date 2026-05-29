@@ -9,129 +9,106 @@
     }
   },
   "navigation": {
-    "tabs": [
+    "dropdowns": [
       {
-        "tab": "Help Center",
-        "icon": "help-circle",
-        "dropdowns": [
+        "dropdown": "Help Center",
+        "pages": [
           {
-            "dropdown": "test",
+            "title": "Help Center",
+            "path": "help-center",
+            "icon": "home"
+          },
+          {
+            "group": "Getting Started",
             "pages": [
               {
-                "title": "Help Center",
-                "path": "help-center",
-                "icon": "home"
+                "title": "Getting Started",
+                "path": "help-center/getting-started"
+              }
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              {
+                "title": "Introduction and Login",
+                "path": "help-center/guides/introduction-and-login"
               },
               {
-                "group": "Getting Started",
-                "pages": [
-                  {
-                    "title": "Getting Started",
-                    "path": "help-center/getting-started"
-                  }
-                ]
+                "title": "Configure Workspace Settings",
+                "path": "help-center/guides/02-configure-workspace-settings"
               },
               {
-                "group": "Guides",
-                "pages": [
-                  {
-                    "title": "Introduction and Login",
-                    "path": "help-center/guides/introduction-and-login"
-                  },
-                  {
-                    "title": "Configure Workspace Settings",
-                    "path": "help-center/guides/02-configure-workspace-settings"
-                  },
-                  {
-                    "title": "Schedule Routes",
-                    "path": "help-center/guides/03-schedule-routes"
-                  },
-                  {
-                    "title": "Adding Contracts",
-                    "path": "help-center/guides/04-adding-contracts"
-                  },
-                  {
-                    "title": "Add Assets",
-                    "path": "help-center/guides/05-add-assets"
-                  },
-                  {
-                    "title": "Add Drivers",
-                    "path": "help-center/guides/06-add-drivers"
-                  }
-                ]
+                "title": "Schedule Routes",
+                "path": "help-center/guides/03-schedule-routes"
               },
               {
-                "group": "Solutions",
-                "pages": [
-                  {
-                    "title": "Dynamic Scheduler",
-                    "path": "help-center/solutions/dynamic-scheduler"
-                  },
-                  {
-                    "title": "Adjust Overtime (Dynamic Scheduler)",
-                    "path": "help-center/solutions/how-to-adjust-overtime-dynamic-scheduler"
-                  },
-                  {
-                    "title": "Edit Actual Route Start and End Times",
-                    "path": "help-center/solutions/how-to-edit-actual-route-start-and-end-times"
-                  },
-                  {
-                    "title": "Import Routes into Copilot",
-                    "path": "help-center/solutions/import-routes-into-copilot"
-                  },
-                  {
-                    "title": "Manage Billing and Invoices",
-                    "path": "help-center/solutions/manage-billing-and-invoices"
-                  },
-                  {
-                    "title": "Scheduling a Route",
-                    "path": "help-center/solutions/scheduling-a-route"
-                  },
-                  {
-                    "title": "SCV Chrome Extension",
-                    "path": "help-center/solutions/scv-chrome-extension"
-                  },
-                  {
-                    "title": "Text Message Notifications",
-                    "path": "help-center/solutions/text-message-notifications"
-                  },
-                  {
-                    "title": "The Audit Panel",
-                    "path": "help-center/solutions/the-audit-panel"
-                  },
-                  {
-                    "title": "Time Off Tracker",
-                    "path": "help-center/solutions/time-off-tracker"
-                  },
-                  {
-                    "title": "Understanding Ride Along Routes",
-                    "path": "help-center/solutions/understanding-ride-along-routes"
-                  }
-                ]
+                "title": "Adding Contracts",
+                "path": "help-center/guides/04-adding-contracts"
               },
               {
-                "group": "FAQ",
-                "pages": [
-                  {
-                    "title": "Dynamic Scheduler FAQs",
-                    "path": "help-center/faq/dynamic-scheduler-faqs"
-                  },
-                  {
-                    "title": "What is a Standby Driver?",
-                    "path": "help-center/faq/what-is-a-standby-driver"
-                  },
-                  {
-                    "title": "Why Can't I Assign a Driver to a Route Block?",
-                    "path": "help-center/faq/why-cant-i-assign-a-driver-to-a-route-block"
-                  }
-                ]
+                "title": "Add Assets",
+                "path": "help-center/guides/05-add-assets"
+              },
+              {
+                "title": "Add Drivers",
+                "path": "help-center/guides/06-add-drivers"
+              }
+            ]
+          },
+          {
+            "group": "Solutions",
+            "pages": [
+              {
+                "title": "Dynamic Scheduler",
+                "path": "help-center/solutions/dynamic-scheduler"
+              },
+              {
+                "title": "Adjust Overtime (Dynamic Scheduler)",
+                "path": "help-center/solutions/how-to-adjust-overtime-dynamic-scheduler"
+              },
+              {
+                "title": "Edit Actual Route Start and End Times",
+                "path": "help-center/solutions/how-to-edit-actual-route-start-and-end-times"
+              },
+              {
+                "title": "Import Routes into Copilot",
+                "path": "help-center/solutions/import-routes-into-copilot"
+              },
+              {
+                "title": "Manage Billing and Invoices",
+                "path": "help-center/solutions/manage-billing-and-invoices"
+              },
+              {
+                "title": "Scheduling a Route",
+                "path": "help-center/solutions/scheduling-a-route"
+              },
+              {
+                "title": "SCV Chrome Extension",
+                "path": "help-center/solutions/scv-chrome-extension"
+              },
+              {
+                "title": "Text Message Notifications",
+                "path": "help-center/solutions/text-message-notifications"
+              },
+              {
+                "title": "The Audit Panel",
+                "path": "help-center/solutions/the-audit-panel"
+              },
+              {
+                "title": "Time Off Tracker",
+                "path": "help-center/solutions/time-off-tracker"
+              },
+              {
+                "title": "Understanding Ride Along Routes",
+                "path": "help-center/solutions/understanding-ride-along-routes"
               }
             ]
           }
-        ]
+        ],
+        "icon": "circle-question-mark"
       },
       {
-        "tab": "Changelog",
         "icon": "clock",
         "pages": [
           {
@@ -139,7 +116,8 @@
             "path": "changelog",
             "icon": "history"
           }
-        ]
+        ],
+        "dropdown": "Changelog"
       }
     ]
   }
