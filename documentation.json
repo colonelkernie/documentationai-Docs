@@ -51,6 +51,16 @@
         "pages": [],
         "icon": "hammer",
         "path": "solutions"
+      },
+      {
+        "group": "FAQs",
+        "pages": [],
+        "icon": "circle-question-mark",
+        "path": "faqs"
+      },
+      {
+        "title": "Changelog",
+        "path": "changelog"
       }
     ]
   }
