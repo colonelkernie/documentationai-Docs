@@ -2,14 +2,10 @@
   "name": "Laminar Copilot",
   "colors": {
     "light": {
-      "brand": "#315e6d",
-      "heading": "#1a1a1a",
-      "text": "#374151"
+      "brand": "#243338"
     },
     "dark": {
-      "brand": "#82B8C9",
-      "heading": "#f2f2f2",
-      "text": "#c1c1c1"
+      "brand": "#82B8C9"
     }
   },
   "navigation": {
@@ -47,11 +43,13 @@
             "path": "help-center/guides/03-schedule-routes"
           }
         ],
-        "path": "help-center/getting-started"
+        "path": "help-center/getting-started",
+        "icon": "circle-play"
       },
       {
         "group": "Solutions",
         "pages": [],
+        "icon": "hammer",
         "path": "solutions"
       }
     ]
