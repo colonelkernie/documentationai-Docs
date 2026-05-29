@@ -2,10 +2,14 @@
   "name": "Laminar Copilot",
   "colors": {
     "light": {
-      "brand": "#243338"
+      "brand": "#315e6d",
+      "heading": "#1a1a1a",
+      "text": "#374151"
     },
     "dark": {
-      "brand": "#82B8C9"
+      "brand": "#82B8C9",
+      "heading": "#f2f2f2",
+      "text": "#c1c1c1"
     }
   },
   "navigation": {
@@ -44,6 +48,11 @@
           }
         ],
         "path": "help-center/getting-started"
+      },
+      {
+        "group": "Solutions",
+        "pages": [],
+        "path": "solutions"
       }
     ]
   }
