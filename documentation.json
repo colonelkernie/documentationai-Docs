@@ -9,58 +9,40 @@
     }
   },
   "navigation": {
-    "tabs": [
+    "pages": [
       {
-        "tab": "Help Center",
-        "pages": [
-          {
-            "title": "Help Center",
-            "path": "help-center",
-            "icon": "home"
-          },
-          {
-            "group": "Getting Started",
-            "pages": [
-              {
-                "title": "Introduction and Login",
-                "path": "help-center/guides/introduction-and-login"
-              },
-              {
-                "title": "Configure Workspace Settings",
-                "path": "help-center/guides/02-configure-workspace-settings"
-              },
-              {
-                "title": "Schedule Routes",
-                "path": "help-center/guides/03-schedule-routes"
-              },
-              {
-                "title": "Adding Contracts",
-                "path": "help-center/guides/04-adding-contracts"
-              },
-              {
-                "title": "Add Assets",
-                "path": "help-center/guides/05-add-assets"
-              },
-              {
-                "title": "Add Drivers",
-                "path": "help-center/guides/06-add-drivers"
-              }
-            ],
-            "path": "help-center/getting-started"
-          }
-        ],
-        "icon": "circle-question-mark"
+        "title": "Help Center",
+        "path": "help-center",
+        "icon": "home"
       },
       {
-        "icon": "clock",
+        "group": "Getting Started",
         "pages": [
           {
-            "title": "Release History",
-            "path": "changelog",
-            "icon": "history"
+            "title": "Introduction and Login",
+            "path": "help-center/guides/introduction-and-login"
+          },
+          {
+            "title": "Configure Workspace Settings",
+            "path": "help-center/guides/02-configure-workspace-settings"
+          },
+          {
+            "title": "Adding Contracts",
+            "path": "help-center/guides/04-adding-contracts"
+          },
+          {
+            "title": "Add Assets",
+            "path": "help-center/guides/05-add-assets"
+          },
+          {
+            "title": "Add Drivers",
+            "path": "help-center/guides/06-add-drivers"
+          },
+          {
+            "title": "Schedule Routes",
+            "path": "help-center/guides/03-schedule-routes"
           }
-        ],
-        "tab": "Changelog"
+        ]
       }
     ]
   }
