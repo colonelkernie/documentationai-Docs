@@ -11,7 +11,7 @@
   "navigation": {
     "pages": [
       {
-        "title": "Help Center",
+        "title": "Home",
         "path": "help-center",
         "icon": "home"
       },
