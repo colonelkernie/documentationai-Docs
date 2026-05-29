@@ -2,16 +2,20 @@
   "name": "Laminar Copilot",
   "colors": {
     "light": {
-      "brand": "#243338"
+      "brand": "#315e6d",
+      "heading": "#1a1a1a",
+      "text": "#374151"
     },
     "dark": {
-      "brand": "#82B8C9"
+      "brand": "#82B8C9",
+      "heading": "#f2f2f2",
+      "text": "#c1c1c1"
     }
   },
   "navigation": {
     "pages": [
       {
-        "title": "Home",
+        "title": "Help Center",
         "path": "help-center",
         "icon": "home"
       },
@@ -43,25 +47,27 @@
             "path": "help-center/guides/03-schedule-routes"
           }
         ],
-        "path": "help-center/getting-started",
-        "icon": "circle-play"
+        "path": "help-center/getting-started"
       },
       {
         "group": "Solutions",
         "pages": [],
-        "icon": "hammer",
         "path": "solutions"
-      },
-      {
-        "group": "FAQs",
-        "pages": [],
-        "icon": "circle-question-mark",
-        "path": "faqs"
-      },
-      {
-        "title": "Changelog",
-        "path": "changelog"
       }
     ]
+  },
+  "navbar": {
+    "actions": {
+      "primary": {
+        "title": "Go to app",
+        "link": "https://app.laminarcopilot.com"
+      },
+      "links": [
+        {
+          "title": "Join the waitlist",
+          "link": "https://laminarcopilot.com"
+        }
+      ]
+    }
   }
 }
