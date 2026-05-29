@@ -59,6 +59,16 @@
         "path": "faqs"
       },
       {
+        "group": "Contact Support",
+        "pages": [
+          {
+            "title": "Submit a Support Ticket",
+            "path": "submit-a-support-ticket"
+          }
+        ],
+        "icon": "hand"
+      },
+      {
         "title": "Changelog",
         "path": "changelog"
       }
