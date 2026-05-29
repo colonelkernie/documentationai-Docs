@@ -1,117 +1,42 @@
 ---
 title: Changelog
-description: Stay updated with the latest releases and improvements in Laminar Copilot. This page lists recent updates, bug fixes, and new features.
+description: >-
+  Stay updated with the latest releases and improvements in Laminar Copilot.
+  This page lists recent updates, bug fixes, and new features.
 ---
-
 ## Overview
 
-Laminar Copilot releases new versions regularly to introduce features, fix bugs, and improve performance. Check this page for the latest changes that enhance your workflow automation and AI-driven insights.
-
-<Callout kind="info">
-  Enable automatic updates in your Laminar Copilot dashboard at `https://app.laminarcopilot.com/settings` to always run the newest version.
-</Callout>
+Laminar Copilot releases new versions regularly to introduce features, fix bugs, and improve performance. Check this page for the latest changes that enhance your workflows in Copilot.
 
 ## Recent Releases
 
-<Update label="2024-10-15" description="v1.5.0" tags={["feature", "improvement"]}>
-## New Features
+<Update label="2026-05-09" tags={["feature","improvement","fix"]}>
+  ## New Maintenance Tracker
 
-- Added support for custom AI prompts in route scheduling workflows.
-- Introduced real-time collaboration on audit panels for team reviews.
+  We now have <a href="https://app.laminarcopilot.com/maintenance_blocks" target="_blank" rel="noopener noreferrer">**Maintenance Tracker**</a>, a new page that allows you to manage and view all Maintenance Blocks for your assets. 
 
-## Improvements
+  Please use this tab to add new Maintenance Blocks and view all existing ones.
 
-- Enhanced performance of the dashboard with 40% faster load times.
-- Better error handling for webhook integrations.
+  Watch the <a href="https://canva.link/hi5itj3e0tv0ewx" target="_blank" rel="noopener noreferrer">video below</a> for a brief walkthrough.
 
-## Bug Fixes
+  <Image src="https://mail.google.com/mail/u/0?ui=2&ik=49e755016b&attid=0.1&permmsgid=msg-a:r-5264250581917457275&th=19e0eca03696407b&view=fimg&fur=ip&permmsgid=msg-a:r-5264250581917457275&sz=s0-l75-ft&attbid=ANGjdJ-Gru8CqTW3yNcHUyXogYnxiZNm6CYCUK4uqVeAFCPf9b4Fm9w_ebWsNt7vEkfsDpW5LAA3pNy7FI2b97jLIITqoOlQrnX9yZYDworndpHPvwYHoclcgMsWSFI&disp=emb&realattid=ii_19e0ec9f7c9fa05b4241&zw" width="323" height="171" alt="10.13AM@2x.png" style="width: 323px; height: auto; cursor: pointer;" />
 
-- Fixed intermittent crashes when processing large datasets in the Audit Panel.
-- Resolved authentication issues with third-party OAuth providers.
+  ## **New Route Status: Cancelled by Amazon**
+
+  You can now mark a route as “Cancelled by Amazon.” Copilot will treat the route as a non-active block but still display it in the Driver and Asset breakdown tables for visibility.
+
+  <Image src="https://mail.google.com/mail/u/0?ui=2&ik=49e755016b&attid=0.2&permmsgid=msg-a:r-5264250581917457275&th=19e0eca03696407b&view=fimg&fur=ip&permmsgid=msg-a:r-5264250581917457275&sz=s0-l75-ft&attbid=ANGjdJ_ITmEEW6qh5wqdXfSoxb1Ci1-KJwTONiJQp-pq_4zKOLcv3t9_W2jDKAqcYut6taxfh-D5pZ1OA2JjBmhxKRbIVPpeTGXUgFbeDVRzRfdbR1yP4_-kkw-WBII&disp=emb&realattid=ii_19e0ec9f7cab20e13882&zw" width="342" height="217" alt="10.20AM@2x.png" style="width: 342px; height: auto; cursor: pointer;" />
+
+  ## **Bug fixing on Incremental Routes**
+
+  We resolved a bug that limited which drivers could be assigned to Incremental Routes. Now all your drivers — regardless of their route type preferences — can be assigned to an Incremental Route.
 </Update>
-
-<Update label="2024-09-20" description="v1.4.2" tags={["bugfix", "security"]}>
-## Security Updates
-
-- Patched potential vulnerabilities in API token handling.
-
-## Bug Fixes
-
-- Corrected route scheduling conflicts during peak hours.
-- Fixed display issues in the mobile-responsive audit panel.
-
-## Improvements
-
-- Optimized memory usage for long-running copilot sessions.
-</Update>
-
-<Update label="2024-08-10" description="v1.4.0" tags={["feature", "breaking"]}>
-## New Features
-
-- Launched beta support for multi-tenant organizations.
-- Integrated natural language querying for dashboard analytics.
-
-## Breaking Changes
-
-- Updated API endpoints from `/v1/routes` to `/v2/workflows` for better consistency. Update your integrations accordingly.
-
-## Bug Fixes
-
-- Addressed sync delays between copilot suggestions and the main app.
-</Update>
-
-## Explore Related Documentation
-
-<Columns cols={2}>
-  <Card title="Getting Started" icon="book-open" href="/quickstart">
-    Set up Laminar Copilot and run your first workflow.
-  </Card>
-  <Card title="Audit Panel Guide" icon="shield" href="/guides/audit-panel">
-    Learn to monitor and review automated decisions.
-  </Card>
-  <Card title="API Reference" icon="code" href="/api-reference">
-    Integrate with your systems using our REST API.
-  </Card>
-  <Card title="FAQs" icon="help-circle" href="/faq" horizontal>
-    Common questions and troubleshooting tips.
-  </Card>
-</Columns>
 
 ## Upcoming Changes
 
-<Expandable title="Planned Features and Deprecations" default-open="false">
-
-Look for these enhancements in future releases:
-
-- Native support for PostgreSQL data sources (Q4 2024).
-- Advanced AI model fine-tuning (v1.6.0).
-- Deprecation of legacy `/v1` API endpoints by end of 2024—migrate to `/v2`.
-
-<Callout kind="tip">
-  Join the Laminar Copilot community forum at `https://app.laminarcopilot.com/community` to vote on features and provide feedback.
-</Callout>
-
+<Expandable title="Multi-domicile workspace" default-open="false">
+  We're working on updating our Copilot workspace so you can manage routes for multiple domiciles under one account login.
 </Expandable>
 
-## How to Check Your Version
+##
 
-Verify your installed version via the API:
-
-<CodeGroup tabs="cURL,JavaScript">
-```bash
-curl -H "Authorization: Bearer YOUR_API_KEY" \
-  https://api.example.com/v2/version
-```
-
-```javascript
-const response = await fetch('https://api.example.com/v2/version', {
-  headers: {
-    'Authorization': 'Bearer YOUR_API_KEY'
-  }
-});
-const data = await response.json();
-console.log(data.version); // e.g., "1.5.0"
-```
-</CodeGroup>
-
-Stay tuned for more updates that make Laminar Copilot faster and more powerful for your automation needs.

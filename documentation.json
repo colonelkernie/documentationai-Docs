@@ -20,11 +20,6 @@
           },
           {
             "group": "Getting Started",
-            "pages": [],
-            "path": "help-center/getting-started"
-          },
-          {
-            "group": "Guides",
             "pages": [
               {
                 "title": "Introduction and Login",
@@ -50,7 +45,8 @@
                 "title": "Add Drivers",
                 "path": "help-center/guides/06-add-drivers"
               }
-            ]
+            ],
+            "path": "help-center/getting-started"
           },
           {
             "group": "Solutions",
