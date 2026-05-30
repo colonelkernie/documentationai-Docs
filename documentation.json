@@ -140,6 +140,10 @@
             "ask-feedback": false
           },
           {
+            "title": "Chat via WhatsApp",
+            "path": "chat-via-whatsapp"
+          },
+          {
             "title": "Manage Billing",
             "path": "manage-billing-and-invoices"
           }
