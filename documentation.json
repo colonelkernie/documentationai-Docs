@@ -151,5 +151,13 @@
         "icon": "clock"
       }
     ]
+  },
+  "navbar": {
+    "actions": {
+      "primary": {
+        "title": "Go to App",
+        "link": "https://app.laminarcopilot.com"
+      }
+    }
   }
 }
