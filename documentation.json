@@ -136,7 +136,8 @@
         "pages": [
           {
             "title": "Submit a Support Ticket",
-            "path": "submit-a-support-ticket"
+            "path": "submit-a-support-ticket",
+            "ask-feedback": false
           },
           {
             "title": "Manage Billing",
