@@ -116,12 +116,12 @@
         "group": "FAQs",
         "pages": [
           {
-            "title": "Dynamic Scheduler Faqs",
-            "path": "help-center/faq/dynamic-scheduler-faqs"
+            "title": "Dynamic Scheduler FAQs",
+            "path": "dynamic-scheduler-faqs"
           },
           {
-            "title": "What Is A Standby Driver?",
-            "path": "help-center/faq/what-is-a-standby-driver"
+            "title": "What is a Standby Driver?",
+            "path": "what-is-a-standby-driver"
           },
           {
             "title": "Why Cant I Assign A Driver To A Route Block?",
