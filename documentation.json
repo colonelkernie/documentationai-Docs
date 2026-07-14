@@ -164,5 +164,11 @@
         "link": "https://app.laminarcopilot.com"
       }
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/updates",
+      "destination": "/changelog"
+    }
+  ]
 }
