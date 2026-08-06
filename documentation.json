@@ -76,6 +76,10 @@
               {
                 "title": "The Audit Panel",
                 "path": "help-center/solutions/the-audit-panel"
+              },
+              {
+                "title": "Relay Integration",
+                "path": "help-center/solutions/relay-integration"
               }
             ],
             "icon": "layout-list"
