@@ -58,6 +58,10 @@
             "group": "Managing Routes",
             "pages": [
               {
+                "title": "Import Routes into Copilot",
+                "path": "help-center/solutions/import-routes-into-copilot"
+              },
+              {
                 "title": "Dynamic Scheduler",
                 "path": "help-center/solutions/dynamic-scheduler"
               },
