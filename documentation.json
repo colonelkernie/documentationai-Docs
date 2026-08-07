@@ -74,6 +74,10 @@
                 "path": "help-center/solutions/how-to-edit-actual-route-start-and-end-times"
               },
               {
+                "title": "GeoTab HOS Integration",
+                "path": "help-center/solutions/geotab-hos-integration"
+              },
+              {
                 "title": "Ride Along Routes",
                 "path": "help-center/solutions/understanding-ride-along-routes"
               },
