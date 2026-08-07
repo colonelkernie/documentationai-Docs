@@ -58,6 +58,10 @@
             "group": "Managing Routes",
             "pages": [
               {
+                "title": "Import Routes into Copilot",
+                "path": "help-center/solutions/import-routes-into-copilot"
+              },
+              {
                 "title": "Dynamic Scheduler",
                 "path": "help-center/solutions/dynamic-scheduler"
               },
@@ -66,16 +70,24 @@
                 "path": "help-center/solutions/scheduling-a-route"
               },
               {
-                "title": "Edit Actual Route Start And End Times",
+                "title": "Actual Route Start And End Times",
                 "path": "help-center/solutions/how-to-edit-actual-route-start-and-end-times"
               },
               {
-                "title": "Understanding Ride Along Routes",
+                "title": "GeoTab HOS Integration",
+                "path": "help-center/solutions/geotab-hos-integration"
+              },
+              {
+                "title": "Ride Along Routes",
                 "path": "help-center/solutions/understanding-ride-along-routes"
               },
               {
                 "title": "The Audit Panel",
                 "path": "help-center/solutions/the-audit-panel"
+              },
+              {
+                "title": "Relay Integration",
+                "path": "help-center/solutions/relay-integration"
               }
             ],
             "icon": "layout-list"

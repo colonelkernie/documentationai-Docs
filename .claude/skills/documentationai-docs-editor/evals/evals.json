@@ -1,0 +1,45 @@
+{
+  "skill_name": "documentationai-docs-editor",
+  "evals": [
+    {
+      "id": 1,
+      "name": "add-faq-page",
+      "prompt": "Can you add a new FAQ page to the docs explaining how the Time Off Tracker interacts with the Dynamic Scheduler? Basic idea: once a time off request is approved, that driver is automatically blocked out on the schedule for those dates, but until it's approved the driver still shows up as available. Put it wherever makes sense in the site.",
+      "expected_output": "A new .mdx file with proper frontmatter (title + description) covering the Time Off Tracker / Dynamic Scheduler interaction, placed in a sensible location (e.g. alongside the other FAQs), plus a matching new entry added to documentation.json so the page is actually reachable in site navigation.",
+      "files": [],
+      "assertions": [
+        "A new .mdx file was created that did not exist in the original repo",
+        "The new file's frontmatter includes both a non-empty title and a non-empty description",
+        "documentation.json has a new nav entry whose path matches the new file's location",
+        "No nav entry in the final documentation.json points at a missing file, and no page is left without a nav entry (checked directly, not via a bundled script)",
+        "The new page's body actually explains the Time Off Tracker / Dynamic Scheduler interaction (approved request blocks the schedule; unapproved still shows the driver as available)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "rename-move-page",
+      "prompt": "The 'How To Adjust Overtime Dynamic Scheduler' article is filed under Managing Drivers, but it's really about route scheduling, not driver management. Can you move it into the Managing Routes group instead? Keep the content as-is, just fix where it lives in the site.",
+      "expected_output": "The page's documentation.json entry is moved from the Managing Drivers sub-group to the Managing Routes sub-group (title/content unchanged). If the file's slug/location changes, documentation.json's path is updated to match and any internal links to the old path are updated too, so nothing is left dangling.",
+      "files": [],
+      "assertions": [
+        "documentation.json no longer lists 'How To Adjust Overtime Dynamic Scheduler' under the Managing Drivers sub-group",
+        "documentation.json lists it under the Managing Routes sub-group instead",
+        "The entry's path points to a file that actually exists at that location (file and nav entry moved together, if the file moved at all)",
+        "The page's body content is substantively unchanged from the original",
+        "No nav entry in the final documentation.json points at a missing file (checked directly, not via a bundled script)"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "fix-nav-audit",
+      "prompt": "Something feels off with our docs — I don't think everything is showing up right in the site nav. Can you check what's going on and fix it?",
+      "expected_output": "Discovers that help-center/solutions/import-routes-into-copilot.mdx exists on disk but has no documentation.json nav entry (and ideally the missing-description warnings on a few pages), then either adds it to a sensible nav group or clearly flags it to the user with a recommendation — without breaking any other existing nav entries in the process.",
+      "files": [],
+      "assertions": [
+        "The orphaned file help-center/solutions/import-routes-into-copilot.mdx either now has a matching nav entry, or is explicitly flagged to the user in the summary with a clear recommendation",
+        "No nav entry in the final documentation.json points at a missing file, and no page is left without one (checked directly, not via a bundled script)",
+        "No pre-existing, previously-valid nav entry was accidentally broken or removed while fixing the issue"
+      ]
+    }
+  ]
+}
