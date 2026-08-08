@@ -96,6 +96,10 @@
             "group": "Managing Drivers",
             "pages": [
               {
+                "title": "Cover Shift",
+                "path": "help-center/solutions/cover-shift"
+              },
+              {
                 "title": "Time Off Tracker",
                 "path": "help-center/solutions/time-off-tracker"
               },
