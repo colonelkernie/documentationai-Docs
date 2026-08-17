@@ -70,6 +70,10 @@
                 "path": "help-center/solutions/scheduling-a-route"
               },
               {
+                "title": "Cover Shift",
+                "path": "help-center/solutions/cover-shift"
+              },
+              {
                 "title": "Actual Route Start And End Times",
                 "path": "help-center/solutions/how-to-edit-actual-route-start-and-end-times"
               },

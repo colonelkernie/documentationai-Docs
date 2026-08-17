@@ -1,0 +1,84 @@
+---
+title: Cover Shift
+description: >-
+  Recruit drivers by text to fill an open shift when a route is unassigned or a
+  driver rejects it.
+---
+This flow lets you fill an open shift — whether a driver rejected a route or the route was never assigned a driver — by texting eligible drivers and letting them claim it.
+
+## Starting the flow
+
+Click **Cover Shift** in the Edit Drawer of an upcoming route to start.
+
+<Image src="https://blob-cdn.documentation.ai/org-4b09e4c7-5694-4e3a-b513-ba5a260b8918/doc-dc92cda2-d578-4755-971f-b5e8b09c6175/1786151106969-r838l6hs5f-Cover-Shift.Cover Shift?fm=auto&auto=compress%2Cformat" width="455" height="359" alt="Screenshot of Cover Shift button" style="width: 455px; height: auto; cursor: pointer;" />
+
+## The recruitment flow
+
+<Steps>
+  <Step title="Enter reason for callout" icon="pencil" title-type="h3">
+    Only shown when recruiting for a route that isn't already rejected by a driver . Enter the reason for the callout.
+  </Step>
+
+  <Step title="Select drivers" icon="users" title-type="h3">
+    Choose which drivers to recruit. Only drivers eligible for the route are shown.
+
+    <Image src="https://blob-cdn.documentation.ai/org-4b09e4c7-5694-4e3a-b513-ba5a260b8918/doc-dc92cda2-d578-4755-971f-b5e8b09c6175/1786151263029-s3v32ab1j3-pasted-image-1786151260858.png?fm=auto&auto=compress%2Cformat" width="326" height="325" alt="" style="width: 326px; height: auto; cursor: pointer;" />
+
+    <Callout kind="info" collapsed="false">
+      Work in progress: this page will also show each driver's current-week shift hours and rank drivers from lowest to highest hours.
+    </Callout>
+  </Step>
+
+  <Step title="Edit the text message" icon="message-square" title-type="h3">
+    Review the text template that will be sent to selected drivers. You can modify it — for example, to add an incentive for picking up the shift (extra pay, etc.).
+
+    <Image src="https://blob-cdn.documentation.ai/org-4b09e4c7-5694-4e3a-b513-ba5a260b8918/doc-dc92cda2-d578-4755-971f-b5e8b09c6175/1786151445526-7h24y4273y-pasted-image-1786151444021.png?fm=auto&auto=compress%2Cformat" width="303" height="416" alt="" style="width: 303px; height: auto; cursor: pointer;" />
+  </Step>
+
+  <Step title="Review responses" icon="list-checks" title-type="h3">
+    See how drivers have responded to the recruitment text. Once you have acceptances, select one of the drivers who replied yes to assign them the route.
+
+    You can also navigate back to the **Select drivers** page to recruit more drivers.
+
+    <Image src="https://blob-cdn.documentation.ai/org-4b09e4c7-5694-4e3a-b513-ba5a260b8918/doc-dc92cda2-d578-4755-971f-b5e8b09c6175/1786152066623-hd0eq7nma9q-pasted-image-1786152065234.png?fm=auto&auto=compress%2Cformat" width="303" height="416" alt="" style="width: 303px; height: auto; cursor: pointer;" />
+  </Step>
+</Steps>
+
+## Text message behaviors
+
+### Driver responses
+
+Once a recruitment text goes out, a driver can reply:
+
+- **Y** — to say they're available for the shift
+- **N** — to decline
+
+If a driver replies **Y**, they receive:
+
+> Received, \[Name]. You're on the list for the \[Route Type and Time] shift on \[Date]. We'll confirm shortly.
+
+If a driver replies **N**, they receive:
+
+> You have opted out of the \[Route Type and Time] shift on \[Date].
+
+### Management notifications
+
+When a driver accepts, every management contact on file receives a text:
+
+> \[Route Block ID] \[Driver Name] opted into the shift recruitment for \[Route Type and Time] shift on \[Date].
+
+### Confirming a driver
+
+Once you select a driver to assign the route to:
+
+- The selected driver receives a final confirmation text:
+  > Confirmed, \[Driver Name]: \[Route Type and Time] shift on \[Route Date]. Check Relay for full details — may take a few minutes to update.
+- Every other driver who responded receives:
+  > The \[Route Type and Time] shift on \[Route Date] has been filled by another driver. We'll notify you of the next available pickup.
+
+### Canceling the recruitment
+
+If AFP management cancels the recruitment flow, every driver who was originally texted receives:
+
+> The \[Route Type and Time] shift on \[Route Date] is no longer available. We'll notify you of the next available pickup.
+
