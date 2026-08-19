@@ -66,6 +66,10 @@
                 "path": "help-center/solutions/dynamic-scheduler"
               },
               {
+                "title": "Shift Patterns",
+                "path": "help-center/solutions/shift-patterns"
+              },
+              {
                 "title": "Scheduling A Route",
                 "path": "help-center/solutions/scheduling-a-route"
               },
