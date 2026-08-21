@@ -156,7 +156,10 @@
         "pages": [
           {
             "title": "Master Service Agreement",
-            "path": "msa"
+            "path": "msa",
+            "show-parent-label": false,
+            "show-page-navigation": false,
+            "ask-feedback": false
           },
           {
             "title": "Submit a Support Ticket",
