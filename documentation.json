@@ -152,15 +152,8 @@
         "path": "faqs"
       },
       {
-        "group": "Contact Support",
+        "group": "Support",
         "pages": [
-          {
-            "title": "Master Service Agreement",
-            "path": "msa",
-            "show-parent-label": false,
-            "show-page-navigation": false,
-            "ask-feedback": false
-          },
           {
             "title": "Submit a Support Ticket",
             "path": "submit-a-support-ticket",
@@ -173,6 +166,13 @@
           {
             "title": "Manage Billing",
             "path": "manage-billing-and-invoices"
+          },
+          {
+            "title": "Master Service Agreement",
+            "path": "msa",
+            "show-parent-label": false,
+            "show-page-navigation": false,
+            "ask-feedback": false
           }
         ],
         "icon": "hand"
