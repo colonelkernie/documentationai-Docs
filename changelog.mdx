@@ -20,10 +20,14 @@ Laminar Copilot releases new versions regularly to introduce features, fix bugs,
   We fixed a bug where the Audit Panel incorrectly flagged drivers for not accepting routes that were Relay Rejected.
 </Update>
 
-<Update label="2026-08-18" tags={["feature","fix"]}>
+<Update label="2026-08-18" tags={["feature","improvement","fix"]}>
   ### Shift Patterns
 
   SO2 contracts can now be configured with a 2-on-2-off shift pattern, in addition to the existing 4-on-4-off pattern. Dynamic Scheduler assigns the contract's two drivers automatically according to the selected rotation. See the [Shift Patterns](/help-center/solutions/shift-patterns) article for setup.
+
+  ### Relay Integration sync errors
+
+  We improved Relay Integration so that when a sync fails, you'll now see detailed error messaging explaining why.
 
   ### GeoTab integration fix
 
