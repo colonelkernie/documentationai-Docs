@@ -155,6 +155,10 @@
         "group": "Contact Support",
         "pages": [
           {
+            "title": "Master Service Agreement",
+            "path": "msa"
+          },
+          {
             "title": "Submit a Support Ticket",
             "path": "submit-a-support-ticket",
             "ask-feedback": false
