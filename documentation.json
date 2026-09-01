@@ -181,6 +181,16 @@
         "title": "Changelog",
         "path": "changelog",
         "icon": "clock"
+      },
+      {
+        "group": "Legal",
+        "pages": [
+          {
+            "title": "Privacy Policy",
+            "path": "privacy"
+          }
+        ],
+        "icon": "lucide-info"
       }
     ]
   },
