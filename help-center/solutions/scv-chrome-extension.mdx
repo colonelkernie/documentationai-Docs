@@ -1,14 +1,14 @@
 ---
 title: SCV Chrome Extension
 description: >-
-  Easily keep your Assets availability up to date in Copilot with a Chrome
-  extension.
+  Easily keep your Assets availability and driver status up to date in Copilot
+  with a Chrome extension.
 ---
-## Sync Assets Data from Amazon Relay
+## Sync Assets and Drivers Data from Amazon Relay
 
-Assets' availability is constantly changing, and it can be difficult for AFP owners and managers to constantly update Laminar Copilot with the latest status of each asset in your fleet.
+Asset availability and driver status are constantly changing, and it can be difficult for AFP owners and managers to constantly update Laminar Copilot with the latest status of each asset and driver in your fleet.
 
-To automate the update process, Laminar Copilot provides a Chrome extension that will automatically sync your Assets data from Amazon Relay to Laminar Copilot.
+To automate the update process, Laminar Copilot provides a Chrome extension that will automatically sync your Assets and Drivers data from Amazon Relay to Laminar Copilot.
 
 **Please note:** This Chrome extension is a complementary solution that is **not** part of the official Laminar Copilot product. The Chrome extension has limited support and is not subject to the Master Service Agreement.
 
@@ -30,15 +30,25 @@ To automate the update process, Laminar Copilot provides a Chrome extension that
 
 1. Open the extension and make sure you are logged into your Laminar Copilot account.
 
-2. Navigate to Amazon Relay and open the [Assets page](https://relay.amazon.com/assets?ref=owp_nav_assets). (If you are already on the Assets page, refresh the page.)
+2. Navigate to Amazon Relay and open the page for the data you want to sync. (If you are already on that page, refresh the page.)
+
+   - **Assets:** the [Assets page](https://relay.amazon.com/assets?ref=owp_nav_assets)
+
+   - **Drivers:** the [Drivers page](https://relay.amazon.com/drivers)
 
 3. You should see a banner at the top of the browser with the message: *"Laminar Copilot SCV Extension" started debugging this browser. (Please do not close the browser or browser tab until the banner disappears.)*
 
-4. After the "debug" session, navigate to the [Assets page of Laminar Copilot](https://app.laminarcopilot.com/tractors) and confirm the Assets page has been updated with the latest data from Amazon Relay.
+4. After the "debug" session, navigate to the matching page in Laminar Copilot and confirm it has been updated with the latest data from Amazon Relay.
+
+   - **Assets:** the [Assets page of Laminar Copilot](https://app.laminarcopilot.com/tractors)
+
+   - **Drivers:** the [Drivers page of Laminar Copilot](https://app.laminarcopilot.com/drivers)
 
 ---
 
 ## SCV Extension Sync Rules
+
+### Assets
 
 - The SCV Extension will sync the **Asset status** (Available/Unavailable) and the **cab type** (Day/Sleeper) of tractors in Amazon Relay with tractors in Laminar Copilot, matched by Asset ID.
 
@@ -47,4 +57,14 @@ To automate the update process, Laminar Copilot provides a Chrome extension that
 - If there are assets in Laminar Copilot that are **not in Amazon Relay**, the extension will not delete those assets from Copilot.
 
 - Assets must first be created and deleted in Laminar Copilot; the extension will only update assets that exist in both platforms.
+
+### Drivers
+
+- The SCV Extension will sync the **driver status** of drivers in Amazon Relay with drivers in Laminar Copilot, matched by phone number. A driver's phone number must be the same in both platforms for the sync to match them.
+
+- If there are drivers in Amazon Relay that are **not in Laminar Copilot**, the extension will not add those drivers to Copilot.
+
+- If there are drivers in Laminar Copilot that are **not in Amazon Relay**, the extension will not delete those drivers from Copilot.
+
+- Drivers must first be created and deleted in Laminar Copilot; the extension will only update drivers that exist in both platforms.
 
