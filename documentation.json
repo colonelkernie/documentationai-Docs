@@ -82,20 +82,12 @@
                 "path": "help-center/solutions/how-to-edit-actual-route-start-and-end-times"
               },
               {
-                "title": "GeoTab HOS Integration",
-                "path": "help-center/solutions/geotab-hos-integration"
-              },
-              {
                 "title": "Ride Along Routes",
                 "path": "help-center/solutions/understanding-ride-along-routes"
               },
               {
                 "title": "The Audit Panel",
                 "path": "help-center/solutions/the-audit-panel"
-              },
-              {
-                "title": "Relay Integration",
-                "path": "help-center/solutions/relay-integration"
               }
             ],
             "icon": "layout-list"
@@ -119,14 +111,22 @@
             "icon": "id-card-lanyard"
           },
           {
-            "group": "Managing Assets",
+            "group": "Integrations",
             "pages": [
+              {
+                "title": "Relay Integration",
+                "path": "help-center/solutions/relay-integration"
+              },
+              {
+                "title": "GeoTab HOS Integration",
+                "path": "help-center/solutions/geotab-hos-integration"
+              },
               {
                 "title": "SCV Chrome Extension",
                 "path": "help-center/solutions/scv-chrome-extension"
               }
             ],
-            "icon": "lucide-truck"
+            "icon": "plug"
           }
         ],
         "icon": "hammer",
