@@ -207,5 +207,9 @@
       "source": "/updates",
       "destination": "/changelog"
     }
-  ]
+  ],
+  "description": "Documentation for Laminar Copilot, your ultimate AFP management solution.",
+  "logo-dark": "https://blob-cdn.documentation.ai/org-4b09e4c7-5694-4e3a-b513-ba5a260b8918/doc-dc92cda2-d578-4755-971f-b5e8b09c6175/1788454674220-xek56htqopp-Logo.png?fm=auto&auto=compress%2Cformat",
+  "logo-light": "https://blob-cdn.documentation.ai/org-4b09e4c7-5694-4e3a-b513-ba5a260b8918/doc-dc92cda2-d578-4755-971f-b5e8b09c6175/1788454674220-xek56htqopp-Logo.png?fm=auto&auto=compress%2Cformat",
+  "favicon": "https://blob-cdn.documentation.ai/org-4b09e4c7-5694-4e3a-b513-ba5a260b8918/doc-dc92cda2-d578-4755-971f-b5e8b09c6175/1788454674220-xek56htqopp-Logo.png?fm=auto&auto=compress%2Cformat"
 }
