@@ -27,8 +27,6 @@ There's one row per driver and block, with a column for each of:
 
 Rows are grouped by driver, so every row for a driver stays together. Drivers are ordered alphabetically by last name and then first name, and each driver's blocks run earliest date first.
 
-The file has a single header row and then the data — no group headings, blank separator rows, or subtotals. That's deliberate: inserted rows break filters and pivot tables, which is usually what you'll want to do with the file once it's open.
-
 ## Recorded and estimated times
 
 Where Copilot has a recorded actual start or end time for a block, that's the value you'll see. Where it doesn't, the file falls back to the scheduled time and marks the value so you can tell the two apart. Start and end times are worked out separately, so a single row can carry one recorded time and one estimated one.
