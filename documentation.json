@@ -104,8 +104,16 @@
                 "path": "help-center/solutions/text-message-notifications"
               },
               {
-                "title": "How To Adjust Overtime Dynamic Scheduler",
+                "title": "Shift Start Time Windows",
+                "path": "help-center/solutions/shift-start-time-windows"
+              },
+              {
+                "title": "Adjusting Overtime and Additional Shifts",
                 "path": "help-center/solutions/how-to-adjust-overtime-dynamic-scheduler"
+              },
+              {
+                "title": "Driver Shift Summary Export",
+                "path": "help-center/solutions/driver-shift-summary-export"
               }
             ],
             "icon": "id-card-lanyard"
