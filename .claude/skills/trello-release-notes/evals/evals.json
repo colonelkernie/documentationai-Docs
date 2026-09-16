@@ -1,0 +1,70 @@
+{
+  "skill_name": "trello-release-notes",
+  "evals": [
+    {
+      "id": 1,
+      "name": "triage-full-queue",
+      "prompt": "can you do the release notes? whatever's sitting in the release notes list on trello",
+      "expected_output": "Reads every card in 📢 Add to Release Notes (LCP - Engineering) plus each card's checklists, then presents a triage plan covering all of them — internal cards skipped, fixes as changelog only, features as article updates or new articles — with a proposed release date and branch, flagged questions (thin cards, request-style cards, incomplete acceptance criteria), and a note that cards move to Released after the push. Stops for approval: no files changed, no branch created, no Trello writes.",
+      "files": [],
+      "assertions": [
+        "Stopped for approval without changing the repo: changes.patch is empty and the copy is still on 9-4-release at the starting commit",
+        "No Trello cards were moved or edited (all 15 cards are still in 📢 Add to Release Notes afterward)",
+        "The plan covers all 15 cards in the list and puts each one in exactly one bucket",
+        "Fetched card checklists and flags the incomplete acceptance-criteria item on 'Allow two shift start time windows per driver'",
+        "Surfaces the teammate comment on 'Additional Shift Count feature' reporting that the Additional Shifts toggle doesn't flip, and asks whether it's fixed",
+        "Flags 'Make relay update rejected error more observable' as too thin to document confidently instead of inventing details",
+        "Flags 'Can we have only one driver to a Shift Pattern?' as request-style, needing confirmation of what shipped",
+        "Plans an update to relay-integration.mdx because the Sync to Relay button moved",
+        "Combines the two Additional Shift Count cards into one planned entry",
+        "Treats customer-visible bug fixes (the Time Off calendar timezone bug, removing an invalidated asset) as changelog entries rather than skipping them",
+        "Proposes a changelog date and a release branch name",
+        "Says the cards move to Released after the drafts are pushed"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "draft-three-card-release",
+      "prompt": "Write the 9/18 release notes for these three cards from the release notes list on Trello:\n1. Time Off Calendar blocks inaccurate in different timezones: just a changelog line\n2. Move Sync to Relay button next to Notify Drivers button in Command Center Header: changelog line, and update the Relay Integration article\n3. Allow two shift start time windows per driver: needs its own help center article. It's on for everyone, no Support setup needed.\nLeave the other cards alone for now. Go ahead and draft it, don't wait on me for anything minor, just list any questions at the end.",
+      "expected_output": "On a 9-18-release branch: a new <Update label=\"2026-09-18\"> first under Recent Releases, tags in feature, improvement, fix order, one entry per card; the Relay Integration article's Sync to Relay steps updated to the Command Center header next to Notify Drivers; a new article about two shift start time windows in help-center/solutions/ with title and description frontmatter, a matching documentation.json nav entry, and a changelog link to it. The docs contain no code identifiers or teammate/customer names. Changes are committed but not pushed, and the report lists open questions and the cards that would move to Released.",
+      "files": [],
+      "assertions": [
+        "Committed the work on a 9-18-release branch",
+        "changelog.mdx starts Recent Releases with a new <Update label=\"2026-09-18\">",
+        "The 9/18 Update's tags are exactly [\"feature\",\"improvement\",\"fix\"]",
+        "The 9/18 Update has exactly three ### entries, one per requested card",
+        "relay-integration.mdx now puts Sync to Relay in the Command Center header next to Notify Drivers, and the old 'top right of the tab' step is gone",
+        "A new article about shift start time windows exists in help-center/solutions/ with a non-empty title and description",
+        "documentation.json gains exactly one nav entry, pointing at the new article inside a Solutions subgroup, and every nav path resolves to a file",
+        "The 9/18 changelog entry for start time windows links to the new article",
+        "Added doc lines contain no code identifiers or internal names (snake_case names, Driver#, DS, v2, Moses, Jeremy, Paul, Aram)",
+        "No <Image> tags were added",
+        "Added doc lines never call readers 'operators' or 'dispatchers'",
+        "The new article says the second window is optional and that Dynamic Scheduler can assign routes starting in either window",
+        "The new article doesn't tell readers to contact Support to turn the feature on",
+        "Updates or flags the Dynamic Scheduler article and Add Drivers guide, which still describe a single Shift Start Time range",
+        "The final response lists open questions and says the three cards would move to Released"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "triage-related-and-request-cards",
+      "prompt": "before we write anything for 9/18, how would you handle these cards from the release notes list? Additional Shift Count feature, Additional shift count per driver toggle, and Can we have only one driver to a Shift Pattern? tell me what you'd write and where",
+      "expected_output": "A plan, not drafts: merges the two additional shift count cards into one changelog entry and names the existing article(s) they affect; treats the one-driver Shift Pattern card as an update to the existing Shift Patterns article rather than a new page, and flags that its title is a request, so what actually shipped needs confirming; keeps the customer-facing rule that Shift Pattern drivers don't get extra shifts; proposes wording without internal names like additional_shift_count or DS v2. No files changed and no Trello writes.",
+      "files": [],
+      "assertions": [
+        "Made no file changes, as the user asked (changes.patch is empty)",
+        "No Trello cards were moved or edited",
+        "Proposes one combined changelog entry for both Additional Shift Count cards",
+        "Plans the one-driver change as an update to the existing Shift Patterns article, not a new article",
+        "Flags that 'Can we have only one driver to a Shift Pattern?' is a request and asks what actually shipped",
+        "Surfaces the teammate comment on 'Additional Shift Count feature' reporting that the Additional Shifts toggle doesn't flip, and asks whether it's fixed",
+        "Connects Additional Shift Count to the existing overtime article (Custom Weekly Shift Hours) and proposes updating it, or explains why a separate article is better",
+        "Asks whether Additional Shift Count applies to every customer or only those on the newer shift-count scheduling",
+        "Keeps the rule that drivers on Shift Patterns don't get extra shifts from Additional Shift Count",
+        "Proposed customer-facing wording has no internal names (additional_shift_count, use_additional_shift_count, DS, v1/v2)",
+        "Proposed wording addresses readers as 'you', not 'operators'"
+      ]
+    }
+  ]
+}
