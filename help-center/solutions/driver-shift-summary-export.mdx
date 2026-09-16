@@ -1,0 +1,42 @@
+---
+title: Driver Shift Summary Export
+description: >-
+  Download a CSV of your drivers' shift start and end times for a schedule week,
+  ready to reconcile against payroll.
+---
+The Driver Shift Summary export gives you a CSV of every shift your drivers worked in a schedule week, with the start and end time of each one. It's built for reconciling hours against payroll, so the file opens in a spreadsheet and is ready to use without cleanup.
+
+## Downloading the export
+
+1. From the Copilot dashboard, go to **Command Center** in the side navigation.
+2. Navigate to the schedule week you want.
+3. Click **Download**.
+
+The export covers the schedule week you're currently viewing. Keep in mind that a Copilot schedule week isn't the same as a calendar Monday-to-Sunday week.
+
+## What's in the file
+
+There's one row per driver and block, with a column for each of:
+
+- Driver
+- Block date
+- Route identifier
+- Route type
+- Start time
+- End time
+
+Rows are grouped by driver, so every row for a driver stays together. Drivers are ordered alphabetically by last name and then first name, and each driver's blocks run earliest date first.
+
+## Recorded and estimated times
+
+Where Copilot has a recorded actual start or end time for a block, that's the value you'll see. Where it doesn't, the file falls back to the scheduled time and marks the value so you can tell the two apart. Start and end times are worked out separately, so a single row can carry one recorded time and one estimated one.
+
+<Callout kind="alert" collapsed="false">
+  Estimated end times are based on the standard length of the route type, so they tend to run longer than the shift actually did. Check any marked value before using it to approve payroll.
+</Callout>
+
+To get recorded times filled in for you, [GeoTab HOS Integration](/help-center/solutions/geotab-hos-integration) pulls actual start and end times from GeoTab as routes become historic. You can also enter them yourself — see [Actual Route Start and End Times](/help-center/solutions/how-to-edit-actual-route-start-and-end-times).
+
+## Need Help?
+
+If you're unsure how to use the Driver Shift Summary export, contact the **Laminar Copilot Support Team** for assistance.

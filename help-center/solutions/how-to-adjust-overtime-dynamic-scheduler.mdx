@@ -1,13 +1,20 @@
 ---
-title: How to Adjust How Much Overtime Dynamic Scheduler Assigns Drivers
+title: Adjusting Overtime and Additional Shifts
 description: >-
-  This guide explains how to control how much overtime Dynamic Scheduler is
-  allowed to use when assigning routes by enabling Custom Weekly Shift Hours and
-  applying it to specific drivers.
+  This guide explains how to control how much extra work Dynamic Scheduler is
+  allowed to assign, using either Custom Weekly Shift Hours or Additional
+  Shifts, and how to apply it to specific drivers.
 ---
 ## Overview
 
-By default, Dynamic Scheduler follows preset weekly shift hour limits when assigning routes. The **Custom Weekly Shift Hours** feature allows your team to raise that limit at the company level and selectively apply it to individual drivers, giving you more flexibility during high-volume weeks.
+By default, Dynamic Scheduler follows preset limits when assigning routes. You can raise those limits at the company level and selectively apply the increase to individual drivers, giving you more flexibility during high-volume weeks.
+
+Depending on which version of Dynamic Scheduler your workspace runs, you'll see one of two settings under **Scheduling Features** in Company Settings:
+
+- **Custom Weekly Shift Hours** raises the limit in *hours* per week.
+- **Additional Shifts** raises the limit in *number of shifts* per week.
+
+Only one of the two appears in your workspace. Both work the same way: turn the setting on, choose a value, then pick which drivers it applies to.
 
 ---
 
@@ -91,9 +98,51 @@ This ensures overtime is used intentionally and only when necessary.
 
 ---
 
+## Additional Shifts
+
+Where Custom Weekly Shift Hours works in hours, **Additional Shifts** works in whole shifts. Dynamic Scheduler gives each driver up to three shifts a week by default, or up to four when the driver runs Solo 2 (SO2) routes only, or when your carrier only operates SO2 contracts.
+
+### Step 1: Turn on Additional Shifts at the company level
+
+1. Go to **Company Settings**
+
+2. Navigate to **Scheduling Features**
+
+3. Find **Additional Shifts**
+
+4. Toggle the setting **On**
+
+5. Choose how many extra shifts to allow: **0**, **1**, or **2**
+
+6. Save your changes
+
+Setting a value of **1**, for example, lets Dynamic Scheduler schedule up to four shifts per driver, or up to five for a driver who runs SO2 routes only.
+
+### Step 2: Apply Additional Shifts to specific drivers
+
+1. Open the driver's profile
+
+2. Click **Edit**
+
+3. Set **Additional Shifts** to allow this driver to take extra shifts
+
+4. Save the driver record
+
+Drivers left switched off continue to follow the default shift counts.
+
+<Callout kind="tip" collapsed="false">
+  Turning Additional Shifts on doesn't mean every eligible driver picks up extra shifts. Dynamic Scheduler only uses them when there aren't enough drivers to cover the routes.
+</Callout>
+
+<Callout kind="alert" collapsed="false">
+  Additional Shifts doesn't change the shift counts of drivers working a shift pattern. Drivers on a 2 on 2 off or 4 on 4 off rotation keep their pattern.
+</Callout>
+
+---
+
 ## When to Use This Feature
 
-Custom Weekly Shift Hours is best used when:
+Raising the limit, with either setting, is best used when:
 
 - Peak volume weeks require additional driver utilization
 

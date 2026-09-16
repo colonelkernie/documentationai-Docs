@@ -10,6 +10,60 @@ Laminar Copilot releases new versions regularly to introduce features, fix bugs,
 
 ## Recent Releases
 
+<Update label="2026-09-12" tags={["feature","improvement","fix"]}>
+  ### Two shift start time windows per driver
+
+  Each driver can now have a second shift start time window, so a driver who will start early in the morning or late in the afternoon is available for both without becoming available for the hours in between. Dynamic Scheduler assigns a driver to any route whose start time falls in either window. See the [Shift Start Time Windows](/help-center/solutions/shift-start-time-windows) article for details.
+
+  ### Driver Shift Summary export
+
+  You can now download a CSV of your drivers' shift start and end times for the schedule week you're viewing, ready to reconcile against payroll. See the [Driver Shift Summary Export](/help-center/solutions/driver-shift-summary-export) article for details.
+
+  ### Shift Patterns with a single driver
+
+  You can now assign just one driver to a shift pattern and add the second one later, instead of having to fill both driver fields before you can save. See the [Shift Patterns](/help-center/solutions/shift-patterns) article for setup.
+
+  ### Hours of service in the driver dropdown
+
+  When you assign a driver in a route's Edit Drawer, the dropdown now shows how many hours each driver has already worked that week. Within each priority group, drivers are listed from fewest hours worked to most.
+
+  ### Sync to Relay moved to the Command Center header
+
+  **Sync to Relay** and its last synced time now sit next to **Notify Drivers** in the Command Center header, instead of in the top right of the Schedule tab. See the [Relay Integration](/help-center/solutions/relay-integration) article for details.
+
+  ### Earlier routes filled first
+
+  When two possible schedules score equally well, Dynamic Scheduler now prefers the one that fills the earlier starting routes.
+
+  ### Relay Integration fix
+
+  We fixed a bug where swapping drivers between two shifts left one of those shifts unassigned after syncing to Amazon Relay.
+
+  ### Time Off Tracker fix
+
+  We fixed a bug where, for workspaces outside Pacific time, a Time Off block starting at midnight appeared on the previous day in Calendar view.
+
+  ### Breakdown tables fix
+
+  We fixed a bug where the icon marking an unavailable driver, asset, or contract in the Breakdown tables had changed to an orange warning triangle. It's back to the red info icon.
+</Update>
+
+<Update label="2026-09-11" tags={["fix"]}>
+  ### Route editing fix
+
+  We fixed a bug where an invalidated asset couldn't be removed from a route, which blocked you from making other changes to that route, such as reassigning the driver.
+</Update>
+
+<Update label="2026-09-04" tags={["feature","fix"]}>
+  ### Additional Shifts
+
+  You can now let Dynamic Scheduler schedule extra shifts for your drivers during high volume weeks. Set an additional shift count in Company Settings and Dynamic Scheduler will schedule up to that many more shifts per driver. See the [Adjusting Overtime and Additional Shifts](/help-center/solutions/how-to-adjust-overtime-dynamic-scheduler) article for setup.
+
+  ### Shift Patterns fix
+
+  We fixed a bug where, when a shift pattern's own driver couldn't take a block, Dynamic Scheduler could hand that block to a fill-in driver whose work days or shift start time ruled the route out. Fill-in drivers now have to match their own shift preferences.
+</Update>
+
 <Update label="2026-08-31" tags={["improvement","fix"]}>
   ### SCV Extension syncs driver status
 
