@@ -10,9 +10,9 @@ To schedule a route in Laminar Copilot, you'll first need to add the route into 
 
 2. **Click "+ Add Route"**
 
-3. **Select the Route Type** — choose the appropriate route type (Solo 1, Solo 2, RLB, or MAINT). The fields required to complete scheduling will vary based on the route type (see below).
+3. **Select the Route Type** — choose the appropriate route type (Solo 1, Solo 2, Solo 5, RLB, or INC). The fields required to complete scheduling will vary based on the route type (see below).
 
-4. **Enter required details** — fill in all mandatory fields for the route type you selected. For example, Solo 1 and Solo 2 routes require Block ID, Start Date, Contract, Start Point, End Point, Driver, and Asset.
+4. **Enter required details** — fill in all mandatory fields for the route type you selected. For example, Solo 1, Solo 2, and Solo 5 routes require Block ID, Start Date, Contract, Start Point, End Point, Driver, and Asset.
 
 5. **Review driver and asset eligibility** — use the dropdowns to assign available drivers and assets. Copilot will automatically prioritize eligible drivers and filter assets based on availability.
 
@@ -26,9 +26,9 @@ To schedule a route in Laminar Copilot, you'll first need to add the route into 
 
 Scheduling any route in Laminar Copilot has a set of required fields based on the Route Type.
 
-## Solo 1 or Solo 2 Routes
+## Solo 1, Solo 2, or Solo 5 Routes
 
-If a route has the route type of **Solo 1** or **Solo 2**, the following fields are required:
+If a route has the route type of **Solo 1**, **Solo 2**, or **Solo 5**, the following fields are required:
 
 - Block ID
 
@@ -44,7 +44,7 @@ If a route has the route type of **Solo 1** or **Solo 2**, the following fields 
 
 - Asset – pulls in assets from the Assets tab
 
-For Solo 1 and Solo 2 routes, Copilot will automatically calculate the route's ending date and time based on the route type. Solo 1 routes have a set length of 14 hours. Solo 2 routes have a set length of 38 hours.
+For Solo 1, Solo 2, and Solo 5 routes, Copilot will automatically calculate the route's ending date and time based on the route type. Solo 1 routes have a set length of 14 hours. Solo 2 routes have a set length of 38 hours. Solo 5 routes have a set length of 70 hours.
 
 ## Relay Load Board Routes
 
@@ -88,24 +88,6 @@ If a route has the route type of **RLB**, the following fields are required:
 
 - Asset
 
-## Maintenance Routes
-
-Maintenance (MAINT) routes record when assets are out for maintenance. Required fields:
-
-- Start Date
-
-- Start Time
-
-- End Date
-
-- End Time
-
-- Start Point
-
-- End Point
-
-- Asset
-
 ---
 
 # Contract, Driver, and Asset Fields
@@ -144,5 +126,5 @@ Assets can be selected if:
 
 - The asset is marked as available in the Assets tab.
 
-- The asset is not assigned to another route (including Maintenance routes) during the duration of the route being scheduled.
+- The asset is not assigned to another route during the duration of the route being scheduled.
 
