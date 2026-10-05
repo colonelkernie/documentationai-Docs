@@ -40,20 +40,22 @@ All driver assignments on your routes are sent to Amazon Relay, so you don't hav
 You can also bring the latest driver and asset data from Relay into Copilot, so your Driver Roster and Assets stay current without updating each record by hand.
 
 1. Go to the [Drivers page](https://app.laminarcopilot.com/drivers) or the [Assets page](https://app.laminarcopilot.com/tractors) in Copilot.
-2. Click the button to pull from Relay.
+2. Click **Pull from Relay**.
 
-Either button pulls both drivers and assets. They can't be pulled separately.
+Clicking **Pull from Relay** on either page pulls both drivers and assets. They can't be pulled separately.
 
 ### Drivers
 
 - Drivers are matched between Relay and Copilot by **phone number**, then by **email address**.
 - Copilot updates each matched driver's first and last name, email, phone number, and active status.
 - If a driver's name, phone number, or email is blank in Relay, Copilot only updates their active status and leaves their name and contact details as they are.
+- Drivers in Relay that aren't in Copilot yet are added to your Driver Roster.
 
 ### Assets
 
 - Assets are matched by **Asset ID**.
 - Copilot updates each matched asset's availability (Available/Unavailable) and cab type (Day/Sleeper).
+- Assets in Relay that aren't in Copilot yet are added to your Assets.
 
 <Callout kind="alert" collapsed="false">
   Any driver or asset in Copilot that isn't found in Relay is marked inactive. Nothing is deleted. When a driver's or asset's status changes, Copilot updates their route assignments to match: routes assigned to a newly inactive driver or asset are invalidated, and routes are restored when they become active again.
