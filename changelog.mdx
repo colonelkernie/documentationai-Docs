@@ -10,6 +10,40 @@ Laminar Copilot releases new versions regularly to introduce features, fix bugs,
 
 ## Recent Releases
 
+<Update label="2026-10-05" tags={["feature","improvement","fix"]}>
+  ### Time Off Requests
+
+  Drivers can now request time off by texting **TIME OFF** to Copilot. Each request appears in a new **Requests** tab in the Time Off Tracker, where you approve or deny it, and approved requests become Time Off records automatically. See the [Time Off Requests](/help-center/solutions/time-off-requests) article for details.
+
+  ### Pull drivers and assets from Relay
+
+  Relay Integration can now pull driver and asset data from Amazon Relay into Copilot on demand, using a new button on the Drivers and Assets pages. The Command Center button that sends your assignments to Relay has also been renamed from **Sync to Relay** to **Push to Relay**. See the [Relay Integration](/help-center/solutions/relay-integration) article for details.
+
+  ### GeoTab 10-hour reset alerts
+
+  When GeoTab shows a route running long enough that its driver won't have a 10-hour reset before their next route, Copilot now invalidates the driver on that next route and texts both the driver and your management contacts, instead of pushing the route's start time back. See the [GeoTab HOS Integration](/help-center/solutions/geotab-hos-integration) article for details.
+
+  ### Driver text replies
+
+  When a driver has both a 24-hour confirmation text and a Cover Shift recruitment text waiting for a reply, Copilot now asks which one their **Y** or **N** is for instead of guessing. See the [Text Message Notifications](/help-center/solutions/text-message-notifications) article for details.
+
+  ### Single click to edit
+
+  You can now click once on a row in any table to open its edit drawer. The edit button at the end of each row still works as before.
+
+  ### Breakdown table hours
+
+  Hours worked in the Driver Breakdown table now have a tooltip explaining what counts toward last week, this week, and next week. The Asset Breakdown table now shows hours for this week only.
+
+  ### Relay Integration fix
+
+  We fixed a bug where the progress message shown while pushing to Relay was covered by the Breakdown table footer if you switched tabs during the push.
+
+  ### Route status fix
+
+  We fixed a bug where a route with an accepted driver but no asset or contract appeared green with a **No Risk** status. These routes now show as at risk until they're complete.
+</Update>
+
 <Update label="2026-09-27" tags={["improvement"]}>
   ### Print Breakdown tables
 

@@ -100,6 +100,10 @@
                 "path": "help-center/solutions/time-off-tracker"
               },
               {
+                "title": "Time Off Requests",
+                "path": "help-center/solutions/time-off-requests"
+              },
+              {
                 "title": "Text Message Notifications",
                 "path": "help-center/solutions/text-message-notifications"
               },
