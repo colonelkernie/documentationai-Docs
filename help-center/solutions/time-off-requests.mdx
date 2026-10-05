@@ -13,7 +13,11 @@ Time Off Requests work for any driver whose **Can Text** setting is marked as **
 1. The driver texts **TIME OFF** to your Copilot number.
 2. Copilot replies with a personal link to a request form:
 
-   > Hi \[Driver's first name], request time off here: \[link]
+   > Hi \[Driver's first name], this is \[Company Name]. Use this link to request time off:
+   >
+   > \[link]
+   >
+   > This link expires in 24 hours. Text TIME OFF to get a new one.
 3. In the form, the driver adds one or more time off blocks. Each block has a type (**PTO**, **Unpaid**, or **Schedule accommodation**), a start time, an end time, and an optional reason.
 4. The driver submits the request.
 
@@ -25,7 +29,15 @@ A few rules apply to the form:
 
 - A block's start time has to be in the future, and its end time has to be after its start time.
 - Drivers can't edit or cancel a request after submitting it.
-- If a driver's phone number is on file with more than one company, Copilot first texts a numbered list of those companies. The driver replies with a number to get the link for that company.
+- If a driver's phone number is on file with more than one company, Copilot first asks which company the request is for. The driver replies with a number to get the link for that company:
+
+  > This number is associated with multiple companies. Which company are you requesting time off for?
+  >
+  > 1\) \[Company A]
+  >
+  > 2\) \[Company B]
+  >
+  > Reply with 1 or 2.
 
 ## Reviewing requests
 
@@ -50,13 +62,21 @@ The **Pending** view only lists requests whose start time hasn't passed yet. The
 
 **Approve** creates a matching record in the [Time Off Tracker](/help-center/solutions/time-off-tracker) and texts the driver:
 
-> Good news, \[Driver's first name]: your time off request for \[dates] was approved.
+> Good news, \[Driver's first name]: your time off request was approved.
+>
+> \[Start date and time] to \[End date and time] \[Time zone]
 
 **Deny** doesn't create a record, and texts the driver:
 
-> \[Driver's first name], your time off request for \[dates] was denied. Contact your operator with questions.
+> \[Driver's first name], your time off request was denied.
+>
+> \[Start date and time] to \[End date and time] \[Time zone]
+>
+> Contact your operator if you have questions.
 
-Texts to drivers and management contacts go out within about 10 minutes, on the same cadence as shift texts.
+If you review several requests from the same driver together, Copilot combines them into one text that lists each time off period on its own line, in order of start time.
+
+The request link and the company question are sent as soon as the driver texts **TIME OFF**. Approval, denial, and new request texts aren't instant; they go out within about 10 minutes, on the same cadence as shift texts.
 
 <Callout kind="alert" collapsed="false">
   Approving a request invalidates the driver's assignment on any route that overlaps the approved time off. If any part of a route overlaps, the driver is removed from consideration for that entire route, not just the overlapping hours. Check the driver's upcoming routes before you approve.
