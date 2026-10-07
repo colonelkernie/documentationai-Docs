@@ -29,3 +29,19 @@ GeoTab HOS Integration matches drivers between Copilot and GeoTab using their **
 Once your GeoTab account is connected, Copilot automatically pulls actual start and end times for historic routes from GeoTab — you don't need to do anything to trigger it.
 
 This is the automatic counterpart to [Actual Route Start and End Times](/help-center/solutions/how-to-edit-actual-route-start-and-end-times): where Advanced Route Time Editing lets you manually correct a route's actual times, GeoTab HOS Integration fills them in for you automatically once a route is historic.
+
+## When a route runs long
+
+When GeoTab shows a route ending late enough that its driver won't have a full 10-hour reset before their next scheduled route, Copilot flags that next route instead of changing its schedule:
+
+- The next route keeps its scheduled start time.
+- The driver's assignment on that route is invalidated, because they're no longer eligible to run it. The route stays assigned to them until you reassign it.
+- Copilot texts the driver and your AFP management contacts. See [Text Message Notifications](/help-center/solutions/text-message-notifications) for the wording.
+
+To clear the flag, edit the route and assign a different driver, or unassign the driver.
+
+<Callout kind="alert" collapsed="false">
+  Copilot only checks the driver's very next route. Routes further out in their schedule aren't flagged, and Copilot doesn't reassign the route for you.
+</Callout>
+
+If a route still leaves its driver a full 10-hour reset, nothing changes and no texts are sent.

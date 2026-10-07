@@ -1,10 +1,10 @@
 ---
 title: Relay Integration
 description: >-
-  Sync driver assignments from Laminar Copilot directly to Amazon Relay, so you
-  don't have to manually select driver assignments in Relay.
+  Push driver assignments from Laminar Copilot directly to Amazon Relay, and
+  pull the latest driver and asset data from Relay into Copilot on demand.
 ---
-Relay Integration syncs all driver assignments on your routes within Copilot directly to Amazon Relay. Once it's set up, you no longer need to manually select the driver assignment for each route in Relay — Copilot pushes your assignments over for you.
+Relay Integration syncs all driver assignments on your routes within Copilot directly to Amazon Relay. Once it's set up, you no longer need to manually select the driver assignment for each route in Relay — Copilot pushes your assignments over for you. It also lets you pull the latest driver and asset data from Relay into Copilot whenever you need it.
 
 ## Setting up Relay Integration
 
@@ -22,16 +22,41 @@ Relay Integration matches drivers between Copilot and Relay using their **phone 
   If neither a driver's phone number nor email matches between Copilot and Relay, their assignment won't sync. If a driver's assignment isn't appearing as expected in Relay, check that their phone number or email matches on both sides first.
 </Callout>
 
-## Syncing assignments to Relay
+## Pushing assignments to Relay
 
 Once setup is complete, you can push your current driver assignments to Relay at any time:
 
 1. From the Copilot dashboard, go to **Command Center** in the side navigation.
-2. Click **Sync to Relay** in the Command Center header, next to **Notify Drivers**.
+2. Click **Push to Relay** in the Command Center header, next to **Notify Drivers**.
 
-All driver assignments on your routes are sent to Amazon Relay, so you don't have to manually select them there. The time of your last sync is shown next to the button.
+All driver assignments on your routes are sent to Amazon Relay, so you don't have to manually select them there. The time of your last push is shown next to the button.
 
 <Callout kind="tip" collapsed="false">
-  Sync to Relay only pushes your assignments when you click it — it isn't automatic. If you reassign a driver on a route after syncing, click **Sync to Relay** again to send the updated assignment.
+  Push to Relay only pushes your assignments when you click it — it isn't automatic. If you reassign a driver on a route after pushing, click **Push to Relay** again to send the updated assignment.
 </Callout>
 
+## Pulling drivers and assets from Relay
+
+You can also bring the latest driver and asset data from Relay into Copilot, so your Driver Roster and Assets stay current without updating each record by hand.
+
+1. Go to the [Drivers page](https://app.laminarcopilot.com/drivers) or the [Assets page](https://app.laminarcopilot.com/tractors) in Copilot.
+2. Click **Pull from Relay**.
+
+Clicking **Pull from Relay** on either page pulls both drivers and assets. They can't be pulled separately.
+
+### Drivers
+
+- Drivers are matched between Relay and Copilot by **phone number**, then by **email address**.
+- Copilot updates each matched driver's first and last name, email, phone number, and active status.
+- If a driver's name, phone number, or email is blank in Relay, Copilot only updates their active status and leaves their name and contact details as they are.
+- Drivers in Relay that aren't in Copilot yet are added to your Driver Roster.
+
+### Assets
+
+- Assets are matched by **Asset ID**.
+- Copilot updates each matched asset's availability (Available/Unavailable) and cab type (Day/Sleeper).
+- Assets in Relay that aren't in Copilot yet are added to your Assets.
+
+<Callout kind="alert" collapsed="false">
+  Any driver or asset in Copilot that isn't found in Relay is marked inactive. Nothing is deleted. When a driver's or asset's status changes, Copilot updates their route assignments to match: routes assigned to a newly inactive driver or asset are invalidated, and routes are restored when they become active again.
+</Callout>

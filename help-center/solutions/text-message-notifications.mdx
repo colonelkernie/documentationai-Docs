@@ -50,6 +50,31 @@ Two hours before shift start, drivers receive a final reminder text that include
 >
 > Asset Id: \[Asset Id]
 
+### Replying When More Than One Text Is Open
+
+A driver can have two unanswered **Y**/**N** texts at once: a 24-hour confirmation for a route they're assigned to, and a [Cover Shift](/help-center/solutions/cover-shift) recruitment text offering an open shift. When that happens, Copilot saves the driver's **Y** or **N** and asks which text it was for:
+
+> 1\) Shift reminder for route \[Route ID] on \[Date] / 2) Shift offer for the \[Start Time] \[Route type] shift on \[Date]. Reply with 1 or 2.
+
+- Replying **1** or **2** applies the saved answer to that text. Any other number asks the question again.
+- Replying **Y** or **N** again replaces the saved answer, and Copilot asks the question again.
+- The question expires after 1 hour.
+- If the text the driver picks can no longer be answered (for example, the route already started, or the shift was filled), nothing changes and the driver receives:
+
+> That request is no longer open, so no changes were made.
+
+A driver with only one unanswered text replies **Y** or **N** as usual.
+
+### GeoTab 10-Hour Reset Text (Automated)
+
+If you use [GeoTab HOS Integration](/help-center/solutions/geotab-hos-integration) and a driver's route runs long enough that they won't have a 10-hour reset before their next route, the driver receives:
+
+> Laminar Copilot: You're no longer HOS eligible for \[Block ID] on \[Date] at \[Start Time]. Your last shift doesn't leave you a 10 hour reset. Management has been notified.
+
+### Time Off Request Texts
+
+Drivers can text **TIME OFF** to request time off, and Copilot texts them back when you approve or deny the request. See the [Time Off Requests](/help-center/solutions/time-off-requests) article for details.
+
 ---
 
 ## Text Messages to the AFP Management Team
@@ -68,3 +93,14 @@ Copilot will send a message to the AFP management team if a route has **been rej
 
 > This is a courtesy message from Laminar Copilot. \[Route ID] on \[Date] at \[Contracted Start Time] has been rejected by \[Driver Name].
 
+### GeoTab 10-Hour Reset Notification
+
+If you use [GeoTab HOS Integration](/help-center/solutions/geotab-hos-integration), Copilot will send a message to the AFP management team when a route runs long and leaves its driver less than a 10-hour reset before their next route.
+
+> Laminar Copilot alert: \[Block ID] on \[Date] at \[Start Time] does not leave the driver(s) a 10 hour reset after their previous shift. Please adjust the schedule.
+
+### Time Off Request Notification
+
+Copilot will send a message to the AFP management team when a driver submits a time off request by text.
+
+> \[Driver Name] requested time off. Go to Copilot to approve or deny.
