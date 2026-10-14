@@ -26,25 +26,37 @@ Upon sending weekly schedules, drivers receive a text in this format:
 >
 > Please check the Amazon Relay app for your full shift details. If you have any issues with this schedule, reach out to the management team immediately.
 
-### 24-Hour Confirmation Text (Automated)
+### Shift Confirmation Text (Automated)
 
-To prevent no-shows and last-minute callouts, Copilot will send automated text message reminders to drivers 24 hours before their assigned routes.
+To prevent no-shows and last-minute callouts, Copilot will send automated text message reminders to drivers before their assigned routes. By default this text goes out 24 hours before the route starts. You can change the timing or turn the text off in [Automated Texts Settings](/help-center/solutions/automated-texts-settings).
 
-> Hi \[Driver's first name], this is \[Company Name].
+> Hi \[Driver's first name], this is \[Company Name]. This is a reminder that you have a \[Route type] shift starting at \[Start Time] on \[Date]. Please check Relay for your shift details.
 >
-> This is a reminder that you have a \[Route type] shift in the next 24 hours. Please check Relay for your shift details. Reply with "Y" to confirm.
+> Reply with "Y" to confirm. If you cannot fulfill this route, please respond with "N" AND also directly message the management team to inform them. Your shift is at risk if you do not reply.
+
+- If the driver responds with **Y** or **Yes**, the route's **Driver Acceptance** field will be marked as **Accepted**.
+
+- If the driver responds with **N** or **No**, the route's **Driver Acceptance** field will be marked as **Rejected**. The AFP management team will also get a courtesy text that the route has been rejected.
+
+- Replies work in any capitalization, so **y**, **YES**, and **no** are all accepted.
+
+- Drivers have 48 hours after the text is sent to reply, as long as the route hasn't started.
+
+### Second Confirmation Ask (Automated)
+
+If you turn on **Second Confirmation Ask** in [Automated Texts Settings](/help-center/solutions/automated-texts-settings), drivers who still haven't accepted or rejected their route get a follow-up text. It's off by default.
+
+> Hi \[Driver's first name], this is \[Company Name]. We still need confirmation for your \[Route type] shift starting at \[Start Time] on \[Date].
 >
-> If you cannot fulfill this route, please respond with "N" AND also directly message the management team to inform them. Your shift is at risk if you do not reply within 12 hours.
+> Reply with "Y" to confirm. If you cannot fulfill this route, please respond with "N" AND also directly message the management team to inform them.
 
-- If the driver responds with **Y**, the route's **Driver Acceptance** field will be marked as **Accepted**.
+Drivers reply to this text the same way as the Shift Confirmation text.
 
-- If the driver responds with **N**, the route's **Driver Acceptance** field will be marked as **Rejected**. The AFP management team will also get a courtesy text that the route has been rejected.
+### Final Reminder Text (Automated)
 
-### 2-Hour Reminder Text (Automated)
+Before shift start, drivers receive a final reminder text that includes the Asset they will be using. By default this text goes out 2 hours before the route starts. You can change the timing or turn the text off in [Automated Texts Settings](/help-center/solutions/automated-texts-settings).
 
-Two hours before shift start, drivers receive a final reminder text that includes the Asset they will be using:
-
-> Hi \[Driver's first name], this is \[Company Name]. This is a reminder that you have a \[Route type] shift coming up in 2 hours. Please check Relay for specific shift start times.
+> Hi \[Driver's first name], this is \[Company Name]. This is a reminder that you have a \[Route type] shift starting at \[Start Time] on \[Date]. Please check Relay for your shift details.
 >
 > Identifier: \[Route Id]
 >
@@ -52,7 +64,9 @@ Two hours before shift start, drivers receive a final reminder text that include
 
 ### Replying When More Than One Text Is Open
 
-A driver can have two unanswered **Y**/**N** texts at once: a 24-hour confirmation for a route they're assigned to, and a [Cover Shift](/help-center/solutions/cover-shift) recruitment text offering an open shift. When that happens, Copilot saves the driver's **Y** or **N** and asks which text it was for:
+Wherever a text asks for **Y** or **N**, drivers can also reply **Yes** or **No**.
+
+A driver can have two unanswered **Y**/**N** texts at once: a shift confirmation for a route they're assigned to, and a [Cover Shift](/help-center/solutions/cover-shift) recruitment text offering an open shift. When that happens, Copilot saves the driver's **Y** or **N** and asks which text it was for:
 
 > 1\) Shift reminder for route \[Route ID] on \[Date] / 2) Shift offer for the \[Start Time] \[Route type] shift on \[Date]. Reply with 1 or 2.
 
@@ -83,19 +97,19 @@ These are courtesy messages that Copilot sends to the AFP management team on rec
 
 ### Preemptive Notification for Un-Accepted Routes
 
-Copilot will send a message to the AFP management team if a route is starting within 12 hours but has **not been accepted by the driver via text** or has **not been marked as accepted within the Command Center**.
+Copilot will send a message to the AFP management team if a route is starting soon but has **not been accepted by the driver via text** or has **not been marked as accepted within the Command Center**. By default this text goes out 12 hours before the route starts, and only for drivers who were sent a confirmation text. You can change the timing or turn the text off in [Automated Texts Settings](/help-center/solutions/automated-texts-settings), where it's called **Management Escalation**.
 
-> This is a courtesy message from Laminar Copilot. \[Route ID] on \[Date] at \[Start] has not been confirmed by \[Driver Name]. Please reach out or find a replacement.
+> Laminar Copilot alert: \[Route ID] on \[Date] at \[Start Time] has not been confirmed by primary driver \[Driver Name]. Please reach out or find a replacement.
 
 ### Route Rejection Notification
 
-Copilot will send a message to the AFP management team if a route has **been rejected by the driver via text**.
+Copilot will send a message to the AFP management team if a route has **been rejected by the driver via text**. You can turn this text off in [Automated Texts Settings](/help-center/solutions/automated-texts-settings), where it's called **Management Rejection Alert**.
 
-> This is a courtesy message from Laminar Copilot. \[Route ID] on \[Date] at \[Contracted Start Time] has been rejected by \[Driver Name].
+> Laminar Copilot alert: \[Route ID] on \[Date] at \[Start Time] has been rejected by \[Driver Name].
 
 ### GeoTab 10-Hour Reset Notification
 
-If you use [GeoTab HOS Integration](/help-center/solutions/geotab-hos-integration), Copilot will send a message to the AFP management team when a route runs long and leaves its driver less than a 10-hour reset before their next route.
+If you use [GeoTab HOS Integration](/help-center/solutions/geotab-hos-integration), Copilot will send a message to the AFP management team when a route runs long and leaves its driver less than a 10-hour reset before their next route. You can turn this text off in [Automated Texts Settings](/help-center/solutions/automated-texts-settings), where it's called **Management Reset Violation Alert**.
 
 > Laminar Copilot alert: \[Block ID] on \[Date] at \[Start Time] does not leave the driver(s) a 10 hour reset after their previous shift. Please adjust the schedule.
 

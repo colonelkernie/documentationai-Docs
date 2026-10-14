@@ -108,6 +108,10 @@
                 "path": "help-center/solutions/text-message-notifications"
               },
               {
+                "title": "Automated Texts Settings",
+                "path": "help-center/solutions/automated-texts-settings"
+              },
+              {
                 "title": "Shift Start Time Windows",
                 "path": "help-center/solutions/shift-start-time-windows"
               },
