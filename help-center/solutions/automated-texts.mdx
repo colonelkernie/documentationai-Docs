@@ -1,0 +1,69 @@
+---
+title: Automated Texts
+description: >-
+  Choose which automated shift texts Copilot sends to your drivers and
+  management team, and how many hours before shift start each one goes out.
+---
+Automated Texts settings let you choose which shift texts Copilot sends and when it sends them. Each text has its own switch, and the four timed texts each have a number of **hrs before start** that you set. You can also turn on a **Second Confirmation Ask**, a follow-up to drivers who haven't confirmed their shift yet.
+
+For the wording of each text, see the [Text Message Notifications](/help-center/solutions/text-message-notifications) article.
+
+## Changing your Automated Texts settings
+
+1. In Copilot, click the **gear icon** at the bottom of the side navigation and select **Settings**.
+2. In Company Settings, click **Automated Texts**.
+3. Turn each text on or off, and set the **hrs before start** for the timed texts.
+4. Click **Save Changes**.
+
+The timeline at the top of the drawer shows where each timed text falls between 48 hours out and shift start, and updates as you change the hours. If you close the drawer without saving, your changes are discarded.
+
+<Callout kind="info" collapsed="false">
+  **Automated Texts** only appears in Company Settings if texting is turned on for your workspace. If you don't see it, [submit a support ticket](/submit-a-support-ticket).
+</Callout>
+
+## The texts you can configure
+
+| Text | Goes to | Default | When it's sent |
+| --- | --- | --- | --- |
+| **Shift Confirmation** | Driver | On, 24 hrs before start | Asks a driver who hasn't accepted or rejected their shift to reply **Y** or **N**. |
+| **Second Confirmation Ask** | Driver | Off, 16 hrs before start | Follows up with a driver who still hasn't accepted or rejected their shift. |
+| **Management Escalation** | AFP management contacts | On, 12 hrs before start | Tells your management team that a driver who was asked to confirm hasn't replied. |
+| **Final Reminder** | Driver | On, 2 hrs before start | Reminds the driver of their shift and its assigned asset. It doesn't ask for a reply. |
+| **Management Rejection Alert** | AFP management contacts | On, no timing | Sent when a driver rejects a shift confirmation. |
+| **Management Reset Violation Alert** | AFP management contacts | On, no timing | Sent when GeoTab shows a driver won't have a 10-hour reset before their next shift. Only appears if you use [GeoTab HOS Integration](/help-center/solutions/geotab-hos-integration). |
+
+The defaults match the timings Copilot used before these settings existed, so nothing changes for your drivers until you change a setting.
+
+A few things apply to every text:
+
+- On a route with two drivers, each driver is texted separately.
+- Each text is sent once per driver per route. Changing a setting doesn't resend texts that already went out.
+- Drivers only receive texts if their **Can Text** setting is marked as **Yes**. A driver who has rejected a route gets no further texts for it.
+- **Final Reminder** is only sent for routes with an assigned asset, because the text includes the Asset ID.
+
+## Rules for hours
+
+- Hours are whole numbers from 1 to 48.
+- The texts that are turned on have to stay in this order, each with more hours than the next: **Shift Confirmation**, **Second Confirmation Ask**, **Management Escalation**, **Final Reminder**. Two texts can't share the same number of hours.
+- A text that's turned off is left out of the ordering. Its hours are kept and come back when you turn it on again.
+
+If a value breaks one of these rules, a message above the settings explains what to fix, and **Save Changes** stays disabled until you fix it.
+
+## How timing works
+
+Each timed text can be sent from its **hrs before start** until the next text that's turned on takes over. With the default settings, a Shift Confirmation can go out from 24 hours down to 12 hours before the shift starts. **Management Escalation** and **Final Reminder** can be sent any time from their hours until the shift starts.
+
+- A text isn't sent at the exact moment its hours are reached. Copilot checks for texts that are due on a regular cycle, so each one goes out shortly after.
+- **Late assignments can skip a text.** If you assign a driver after a text's window has passed, that text is never sent. With the default settings, a driver assigned 10 hours before start doesn't get a Shift Confirmation.
+- **Management Escalation only covers drivers who were asked to confirm.** In the example above, your management team isn't alerted either, because the driver never received a confirmation text.
+- **Second Confirmation Ask** goes to any driver who still hasn't accepted or rejected, whether or not they received the first Shift Confirmation.
+
+<Callout kind="alert" collapsed="false">
+  If you turn off both **Shift Confirmation** and **Second Confirmation Ask** but leave **Management Escalation** on, your management team is alerted about every assigned driver who hasn't accepted their route by that time, even though no text asked them to confirm.
+</Callout>
+
+Turning off **Management Rejection Alert** only stops the text to your management team. A route is still marked as rejected when its driver replies **N**.
+
+## Need Help?
+
+If you're unsure how to set up your automated texts, contact the **Laminar Copilot Support Team** for assistance.

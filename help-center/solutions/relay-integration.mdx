@@ -60,7 +60,7 @@ When the pull finishes, a modal appears at the bottom right of the page with the
 
 - Assets are matched by **Asset ID**.
 - Copilot updates each matched asset's availability (Available/Unavailable) and cab type (Day/Sleeper).
-- Assets in Relay that aren't in Copilot yet are added to your Assets.
+- Assets in Relay that aren't in Copilot yet are added to your Assets, except assets marked as **Reserved** in Relay. Reserved assets aren't ready to be used yet, so Copilot leaves them out.
 
 <Callout kind="alert" collapsed="false">
   Any driver or asset in Copilot that isn't found in Relay is marked inactive. Nothing is deleted. When a driver's or asset's status changes, Copilot updates their route assignments to match: routes assigned to a newly inactive driver or asset are invalidated, and routes are restored when they become active again.
