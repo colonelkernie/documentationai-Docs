@@ -107,6 +107,12 @@ Copilot will send a message to the AFP management team if a route has **been rej
 
 > Laminar Copilot alert: \[Route ID] on \[Date] at \[Start Time] has been rejected by \[Driver Name].
 
+### Unassigned Route Notification
+
+Copilot will send a message to the AFP management team if a route is **still missing a driver or asset** when it reaches your **Management Escalation** hours (12 hours before start by default), or if it loses its driver or asset after that. This text is off by default. You can turn it on in [Automated Texts Settings](/help-center/solutions/automated-texts-settings), where it's called **Management Unassigned Route Alert**.
+
+> Laminar Copilot alert: \[Block ID] on \[Date] at \[Start Time] is missing \[a driver, an asset, or both]. Please assign \[it or them] before the route starts.
+
 ### GeoTab 10-Hour Reset Notification
 
 If you use [GeoTab HOS Integration](/help-center/solutions/geotab-hos-integration), Copilot will send a message to the AFP management team when a route runs long and leaves its driver less than a 10-hour reset before their next route. You can turn this text off in [Automated Texts Settings](/help-center/solutions/automated-texts-settings), where it's called **Management Reset Violation Alert**.
