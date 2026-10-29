@@ -4,7 +4,7 @@ description: >-
   Choose which automated shift texts Copilot sends to your drivers and
   management team, and how many hours before shift start each one goes out.
 ---
-Automated Texts settings let you choose which shift texts Copilot sends and when it sends them. Each text has its own switch, and the four timed texts each have a number of **hrs before start** that you set. You can also turn on a **Second Confirmation Ask**, a follow-up to drivers who haven't confirmed their shift yet.
+Automated Texts settings let you choose which shift texts Copilot sends and when it sends them. Each text has its own switch, and the timed texts each have a number of **hrs before start** that you set. You can also turn on a **Second Confirmation Ask**, a follow-up to drivers who haven't confirmed their shift yet.
 
 For the wording of each text, see the [Text Message Notifications](/help-center/solutions/text-message-notifications) article.
 
@@ -30,6 +30,7 @@ The timeline at the top of the drawer shows where each timed text falls between 
 | **Management Escalation** | AFP management contacts | On, 12 hrs before start | Tells your management team that a driver who was asked to confirm hasn't replied. |
 | **Final Reminder** | Driver | On, 2 hrs before start | Reminds the driver of their shift and its assigned asset. It doesn't ask for a reply. |
 | **Management Rejection Alert** | AFP management contacts | On, no timing | Sent when a driver rejects a shift confirmation. |
+| **Missing Driver or Asset** | AFP management contacts | Off, 24 hrs before start | Sent when a route is still missing a driver or asset at its hours before start, or loses one after that. |
 | **Management Reset Violation Alert** | AFP management contacts | On, no timing | Sent when GeoTab shows a driver won't have a 10-hour reset before their next shift. Only appears if you use [GeoTab HOS Integration](/help-center/solutions/geotab-hos-integration). |
 
 The defaults match the timings Copilot used before these settings existed, so nothing changes for your drivers until you change a setting.
@@ -63,6 +64,18 @@ Each timed text can be sent from its **hrs before start** until the next text th
 </Callout>
 
 Turning off **Management Rejection Alert** only stops the text to your management team. A route is still marked as rejected when its driver replies **N** or **No**.
+
+## How Missing Driver or Asset works
+
+**Missing Driver or Asset** has its own **hrs before start**, separate from **Management Escalation**.
+
+- If a route is missing a driver, an asset, or both when it reaches its hours, each management contact gets one text saying what's missing. Fixing the route before then sends nothing.
+- If a fully assigned route loses its driver or asset after that point, your management team is texted right away.
+- Each route is texted once until it has both a driver and an asset. If it's fully assigned and later loses one again, it's texted again.
+- Routes created or imported after the hours have already passed aren't texted.
+- Turning the text on doesn't alert you about routes already past its hours. Routes that reach them later are texted as usual.
+- The text only covers an empty driver or asset slot. A route whose driver rejected the shift uses **Management Rejection Alert** instead.
+- Routes that have started, ended, or been cancelled or rejected by Amazon aren't texted.
 
 ## Need Help?
 
