@@ -74,6 +74,10 @@
                 "path": "help-center/solutions/scheduling-a-route"
               },
               {
+                "title": "Auto-Assign and Optimize Assets",
+                "path": "help-center/solutions/auto-assign-and-optimize-assets"
+              },
+              {
                 "title": "Cover Shift",
                 "path": "help-center/solutions/cover-shift"
               },

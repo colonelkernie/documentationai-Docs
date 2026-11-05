@@ -10,6 +10,28 @@ Laminar Copilot releases new versions regularly to introduce features, fix bugs,
 
 ## Recent Releases
 
+<Update label="2026-11-03" tags={["feature","improvement","fix"]}>
+  ### Optimize Assets
+
+  When Auto-assign can't find a free truck for every route, you can now click **Optimize** to have Copilot build a plan that moves or unassigns trucks on other routes so the remaining routes get an asset. You review the plan and apply it in one step, and contract routes are never unassigned. See the [Auto-Assign and Optimize Assets](/help-center/solutions/auto-assign-and-optimize-assets) article for details.
+
+  ### Asset Auto-Assign results
+
+  Auto-assign on the Asset Breakdown table now covers every route type, including SO5, RLB, and INC, and fills routes whose driver has a preferred asset first. When it finishes, the modal stays open and lists the routes that still need an asset.
+
+  ### Contract selection fix
+
+  We fixed a bug where Copilot couldn't match a route to its contract when the route's actual start time differed from its scheduled start time.
+
+  ### 60/70 Rule fix
+
+  We fixed a bug where Copilot checked too many routes when applying the 60/70 Rule, which could block a driver from a route they were eligible for.
+
+  ### Route start time fix
+
+  We fixed a bug where deleting a route's scheduled start time also cleared its scheduled start date. Now only the start time is cleared.
+</Update>
+
 <Update label="2026-10-27" tags={["feature"]}>
   ### Missing Driver or Asset alerts
 

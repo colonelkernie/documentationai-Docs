@@ -1,0 +1,52 @@
+---
+title: Auto-Assign and Optimize Assets
+description: >-
+  Fill routes that need an asset in one click, then let Copilot rearrange
+  existing truck assignments to cover the routes Auto-Assign couldn't fill.
+---
+**Auto-assign** gives an asset to every route that doesn't have one, or whose asset is no longer valid, using trucks that are free for that route's time window. When there's no free truck left, **Optimize** goes a step further: it builds a plan that moves or unassigns trucks on other routes so the routes left without an asset can be covered. You review the plan before anything changes.
+
+## Auto-assigning assets
+
+1. From the Copilot dashboard, go to **Command Center** in the side navigation.
+2. Open the **Asset Breakdown** table.
+3. Click **Auto-assign**.
+
+Auto-assign looks at routes of every type, including SO5, RLB, and INC. Routes whose driver has a preferred asset are filled first, so another route can't take the only truck that driver is allowed to use. After that, contract routes are filled before RLB and INC routes.
+
+When Auto-assign finishes, the modal stays open and shows how many routes still need an asset, with a list of those routes. A message also tells you how many routes got an asset and how many didn't.
+
+## Optimizing assets
+
+If any routes are left without an asset, the modal offers an **Optimize** button.
+
+1. Click **Optimize**. Copilot builds a plan, which may take a moment.
+2. Review the plan. The heading tells you how many of the unassigned routes it fills and how many changes it makes. The table lists:
+   - **Routes getting an asset** (Fill)
+   - **Changes to free up assets** (Move or Unassign), with each route's previous and new asset
+3. Click **Apply** to save the plan, or **Back** to decline it without changing anything.
+
+Routes that would lose their asset are also listed separately, so you can see exactly which routes are given up to cover others.
+
+If no plan can fill any of the routes, Copilot lists the routes it couldn't cover and offers only **Done**.
+
+<Callout kind="alert" collapsed="false">
+  Optimize only targets routes in this week's and next week's schedules. It isn't available while Dynamic Scheduler is running.
+</Callout>
+
+## How Optimize builds a plan
+
+- **Only routes in the way move.** Copilot rearranges only the routes that overlap a route it's trying to fill. Nothing else is touched.
+- **Contract routes come first.** Contract routes are filled before RLB and INC routes, then by start time.
+- **Contract routes are never unassigned.** A truck can be moved off a route onto another free truck. A route can lose its asset only if it's a lower priority than the route being filled, such as an RLB or INC route giving way to a contract route.
+- **The smallest disruption wins.** When several plans work, Copilot picks the one that changes the fewest contract routes, then the fewest routes you assigned by hand.
+- **Asset rules still apply.** A route only gets a truck with the right cab type, with no time off or maintenance during the route, and the driver's preferred asset if they have one.
+- **Routes starting soon are protected.** Routes that have started, or that start within 2 hours, are never moved. A route that needs an asset and starts within 2 hours can still be filled.
+
+## Applying a plan
+
+Apply saves every change in the plan or none of them. Before saving, Copilot checks that each route still has the asset the plan expected, isn't about to start, and that its new asset is still available. If anything changed since the plan was built, nothing is saved, and the error tells you which routes caused it. Run Optimize again to get a fresh plan.
+
+## Need Help?
+
+If you're unsure how to cover routes that still need an asset, contact the **Laminar Copilot Support Team** for assistance.
