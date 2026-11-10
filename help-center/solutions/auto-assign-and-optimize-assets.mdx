@@ -41,6 +41,7 @@ If no plan can fill any of the routes, Copilot lists the routes it couldn't cove
 - **Contract routes are never unassigned.** A truck can be moved off a route onto another free truck. A route can lose its asset only if it's a lower priority than the route being filled, such as an RLB or INC route giving way to a contract route.
 - **The smallest disruption wins.** When several plans work, Copilot picks the one that changes the fewest contract routes, then the fewest routes you assigned by hand.
 - **Asset rules still apply.** A route only gets a truck with the right cab type, with no time off or maintenance during the route, and the driver's preferred asset if they have one.
+- **Prioritized trucks go first.** Among the trucks that fit, Auto-assign and Optimize pick [Prioritized](/help-center/guides/05-add-assets#prioritizing-assets) assets before Standard ones.
 - **Routes starting soon are protected.** Routes that have started, or that start within 2 hours, are never moved. A route that needs an asset and starts within 2 hours can still be filled.
 
 ## Applying a plan

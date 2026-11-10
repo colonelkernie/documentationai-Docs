@@ -11,8 +11,28 @@ description: Adding Contract, Asset, and Driver Data — Add your fleet details 
    - **Asset ID**
    - **Cab Type**
    - **Availability**
+   - **Priority** (optional, see [Prioritizing Assets](#prioritizing-assets) below)
 
 > **Note:** Make sure each asset's status is kept up to date. When a tractor goes down and is unable to go on the road, set its status to `Unavailable`.
+
+---
+
+## Prioritizing Assets
+
+You can mark an asset as **Prioritized** so Copilot assigns it to routes before your other trucks. Every asset starts as **Standard** until you change it.
+
+1. On the **[Assets tab](https://app.laminarcopilot.com/tractors)**, add a new asset or click an asset's row to open its edit drawer.
+2. Set **Priority** to **Prioritized**.
+3. Save the asset.
+
+The **Priority** column on the Assets tab shows whether each asset is Prioritized or Standard.
+
+### How prioritized assets are used
+
+- **Assigning trucks:** For routes that aren't overnight, Dynamic Scheduler, Auto-assign, and Optimize try trucks in this order: Prioritized day cabs, Standard day cabs, Prioritized sleepers, then Standard sleepers. A driver's preferred asset still comes first.
+- **Overnight routes:** Dynamic Scheduler assigns trucks to overnight routes before day routes, so overnight routes get sleepers before any day route is filled.
+- **Asset dropdown:** When you schedule or edit a route, Prioritized assets are listed first in the **Asset** dropdown with a **Prioritized** chip.
+- **Asset Breakdown:** Prioritized assets show a green **Prioritized** badge in the Asset Breakdown table in Command Center. The row order doesn't change, so your saved **Reorder Assets** order still applies.
 
 ---
 
